@@ -106,6 +106,7 @@ def solve_astar(
     )
     
     best_expr = ''
+    best_f_score = float('inf')
     best_f = {}
         
     while frontier:
@@ -116,7 +117,6 @@ def solve_astar(
         # solution check
         if is_solution(task, task_idx, state):
             best_expr = state
-            #print(f'found solution: {state}')
             break
         
         # maybe a depth check
@@ -127,6 +127,12 @@ def solve_astar(
         if state in best_f and node.f_score >= best_f[state]:
             continue
         best_f[state] = node.f_score
+
+        
+        # f_score check to keep track of best solution so far -----------------
+        if node.f_score <= best_f_score:
+            best_f_score = node.f_score
+            best_expr = state # ensures incorrect output is not blank
         
         # generate step -------------------------------------------------------
         if args.method_generate == 'sample':
