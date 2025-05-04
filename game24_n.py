@@ -14,8 +14,12 @@ $ python solve24.py 2 3 7 11 50 -t 75 # classic "Countdown" 75‑target puzzle
 
 from __future__ import annotations
 from fractions import Fraction
-from itertools import combinations
+from itertools import combinations, permutations
 import argparse, math, sys
+import operator
+from sympy import sympify      # pip install sympy
+from typing import List
+import re
 
 OPS = [
     ('+', lambda a, b: a + b, False),                 # (symbol, fn, symmetric?)
@@ -24,57 +28,57 @@ OPS = [
     ('/', lambda a, b: a / b if b != 0 else None, True)
 ]
 
-def solve(nums: list[int | Fraction],
-          target: int | Fraction = 24,
-          find_all: bool = True,
-          tol: Fraction | None = None) -> list[str]:
-    """
-    Returns a list of expression strings that evaluate to `target`.
-    If find_all=False, returns as soon as the first solution is found.
-    """
-    goal   = Fraction(target)
-    tol    = Fraction(0) if tol is None else Fraction(tol)
-    nums_f = [Fraction(n) for n in nums]
+def solve_unique(nums, target=24, tol=0):
+    """All distinct solutions for 24‑game (deduped by commutativity)."""
+    goal = Fraction(target)
+    tol  = Fraction(tol)
 
-    def search(values: list[Fraction], exprs: list[str]) -> list[str]:
-        if len(values) == 1:
-            return [exprs[0]] if abs(values[0] - goal) <= tol else []
+    out, seen = [], set()            # seen holds canonicalised keys
 
-        results = []
-        # choose unordered pair positions i < j
-        for i, j in combinations(range(len(values)), 2):
-            a, b = values[i], values[j]
+    def search(vals, exprs):
+        if len(vals) == 1:
+            if abs(vals[0] - goal) <= tol:
+                expr = exprs[0]      # keep full parentheses
+                key  = str(sympify(expr, evaluate=False))   # canonical form
+                if key not in seen:
+                    seen.add(key)
+                    out.append(expr)
+            return
+
+        for i, j in combinations(range(len(vals)), 2):
+            a, b   = vals[i], vals[j]
             ea, eb = exprs[i], exprs[j]
-
-            # generate new lists after removing positions i & j
-            rest_vals = [v for k, v in enumerate(values) if k not in (i, j)]
-            rest_expr = [e for k, e in enumerate(exprs)  if k not in (i, j)]
+            rest_v = [v for k, v in enumerate(vals)  if k not in (i, j)]
+            rest_e = [e for k, e in enumerate(exprs) if k not in (i, j)]
 
             for sym, fn, ordered in OPS:
-                # try a (op) b
-                res = fn(a, b)
-                if res is not None:
-                    new_vals = rest_vals + [res]
-                    new_expr = rest_expr + [f"({ea} {sym} {eb})"]
-                    found = search(new_vals, new_expr)
-                    results.extend(found)
-                    if found and not find_all:
-                        return results
+                # (+,*) are already treated as unordered by the single branch below
+                for x, y, ex, ey in ( (a, b, ea, eb), ) if not ordered else \
+                                     ( (a, b, ea, eb), (b, a, eb, ea) ):
+                    r = fn(x, y)
+                    if r is None:
+                        continue
+                    search(rest_v + [r], rest_e + [f'({ex} {sym} {ey})'])
 
-                # if the operator is order‑sensitive, also try b (op) a
-                if ordered:
-                    res = fn(b, a)
-                    if res is not None:
-                        new_vals = rest_vals + [res]
-                        new_expr = rest_expr + [f"({eb} {sym} {ea})"]
-                        found = search(new_vals, new_expr)
-                        results.extend(found)
-                        if found and not find_all:
-                            return results
-        return results
+    for perm in permutations(nums):
+        search([Fraction(n) for n in perm], [str(n) for n in perm])
 
-    start_exprs = [str(n) for n in nums_f]
-    return search(nums_f, start_exprs)
+
+    cleaned = set()
+    for soln in out:
+        # Strip outermost parentheses for readability
+        soln_clean = soln[1:-1] if soln.startswith("(") and soln.endswith(")") else soln
+        # Remove redundant parentheses
+        soln_clean = re.sub(r'\(\s*([^\(\)]+)\s*\)', r'\1', soln_clean)
+        # Remove redundant spaces
+        soln_clean = re.sub(r'\s+', ' ', soln_clean)
+        # Remove leading/trailing spaces
+        soln_clean = soln_clean.strip()
+        # Add to cleaned set
+        cleaned.add(soln_clean)
+
+    out = sorted(cleaned, key=lambda x: (len(x), x))  # sort by length, then lexicographically
+    return out
 
 # ---------------------------------------------------------------------------
 # Verbose solver: returns a single solution plus the step‑by‑step trace
@@ -185,7 +189,35 @@ def show_steps(nums, target=24):
         print(s)
     # Strip outermost parentheses for readability
     expr_clean = expr[1:-1] if expr.startswith("(") and expr.endswith(")") else expr
-    print(f"Answer: {expr_clean} = {target}")
+    print(f"Answer: {expr_clean} = {target}") 
+    
+_PRECEDENCE = {'+': 1, '-': 1, '*': 2, '/': 2}
+_OP_WEIGHT  = {'+': 1.0, '-': 1.2, '*': 2.0, '/': 3.0}
+
+def estimate_difficulty(nums):
+    """Return a scalar difficulty score: lower = easier."""
+    sols = solve_unique(nums)      # the 4‑nums solver you built
+
+    def cost(expr):
+        stack, ints, ops = [], 0, 0
+        tokens = expr.replace('(',' ( ').replace(')',' ) ').split()
+        for tok in tokens:
+            if tok.isdigit():
+                stack.append(int(tok))
+            elif tok in '+-*/':
+                b, a = stack.pop(), stack.pop()
+                ops += {'+':1,'-':1.2,'*':2,'/':3}[tok]
+                v = eval(f'{a}{tok}{b}')
+                if v != int(v):            # not an integer
+                    ops += 2
+                if abs(v) > 20:            # "big" number
+                    ops += math.log2(abs(v))
+                stack.append(v)
+        dup_bonus = -0.5 * (4 - len(set(nums)))
+        return ops + dup_bonus
+
+    return min(cost(e) for e in sols)
+
 
 def main(argv: list[str] | None = None):
     parser = argparse.ArgumentParser(description="Brute‑force n‑number 24‑game solver.")
@@ -197,7 +229,7 @@ def main(argv: list[str] | None = None):
                         help="Show *all* solutions (by default stop at first).")
     args = parser.parse_args(argv)
 
-    sols = solve(args.numbers, target=args.target, find_all=args.all)
+    sols = solve_unique(args.numbers, target=args.target)
     if not sols:
         print("No solution")
     else:
@@ -206,12 +238,30 @@ def main(argv: list[str] | None = None):
             # Strip outermost parentheses for readability
             print("  ", s[1:-1] if s.startswith("(") and s.endswith(")") else s)
             
+    # Print difficulty level
+    difficulty = estimate_difficulty(args.numbers)
+    print(f"Difficulty level: {difficulty} (1=very easy, 5=very hard)")
+            
+    print("Possible solution steps:")
     show_steps(args.numbers, target=args.target)
 
-    results = generate_possible_next_steps(args.numbers)
-    import random
-    for result in random.sample(results, 10):
-        print(result)
+    #results = generate_possible_next_steps(args.numbers)
+    #import random
+    #for result in random.sample(results, 10):
+    #    print(result)
+    
+def main2():
+    from tot.tasks.game24 import Game24Task
+    task = Game24Task()
+    
+    for task in task.data[:100]:
+        # Solve the problem
+        # convert input string to list of integers
+        nums = list(map(int, task.split()))
+        solutions = solve_unique(nums)
+        
+        print(f'Input: {task}, solutions: {len(solutions)}, estimated difficulty: {estimate_difficulty(nums)}')
 
 if __name__ == "__main__":
     main()
+    #main2()

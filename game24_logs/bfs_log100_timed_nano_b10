@@ -1,0 +1,1207 @@
+Namespace(backend='gpt-4.1-nano', temperature=0.7, task='game24', naive_run=False, prompt_sample=None, method_generate='propose', method_evaluate='value', method_select='greedy', n_generate_sample=1, n_evaluate_sample=3, n_select_sample=10, solve_method='bfs')
+running with bfs method
+start time: 2025-05-04 14:50:56
+Solving task 901: 1 2 4 7
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Solving task 902: 2 5 8 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Solving task 903: 3 4 4 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Solving task 904: 6 7 8 9
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Solving task 905: 1 11 11 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Solving task 906: 1 8 10 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Solving task 907: 2 3 6 9
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Solving task 908: 1 3 5 9
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Solving task 909: 3 3 7 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Solving task 910: 4 5 7 9
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 908: Incorrect - 3 + 9 = 12 (left: 1 5 12)  
+12 - 1 = 11 (left: 5 11)  
+5 + 11 = 16 (left: 16)
+16 + 8 = 24 (left: 24)  
+
+Solving task 911: 1 2 8 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 906: Incorrect - 11 / 8 = 1.375 (not integer, discard)
+11 - 8 = 3 (left: 3 8 8)
+8 - 3 = 5 (left: 5 8 8)  
+8 - 5 = 3 (left: 3 8 8)  
+
+Solving task 912: 4 6 6 9
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 905: Incorrect - 13 - 11 = 2 (left: 2 1 11)  
+1 * 11 = 11 (left: 2 11 11)
+11 * 2 = 22 (left: 22 11 11)
+22 / 11 = 2 (left: 2 11 11)
+
+Solving task 913: 1 4 4 8
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 910: Incorrect - 4 + 5 = 9 (left: 7 9 9)  
+9 - 9 = 0 (left: 0 7 9)
+9 - 0 = 9 (left: 7 9 9)  
+9 - 7 = 2 (left: 2 9 9)
+
+Solving task 914: 1 5 10 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 909: Incorrect - 7 + 3 = 10 (left: 10 12 3)
+10 - 3 = 7 (left: 7 12 3)
+12 - 7 = 5 (left: 3 5 3)  
+3 + 5 = 8 (left: 3 8 3)  
+
+Solving task 915: 3 4 6 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 904: Incorrect - ...
+14 / 2 = 7 (left: 7 8 8)
+7 - 8 = -1 (left: -1 8 8)  
+-1 + 8 = 7 (left: 7 8 8)
+
+Solving task 916: 2 4 8 9
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 907: Incorrect - 9 - 6 = 3 (left: 2 3 3)  
+3 + 3 = 6 (left: 2 6 3)
+6 - 2 = 4 (left: 3 4 3)  
+3 + 4 = 7 (left: 3 7 3)  
+
+Solving task 917: 1 4 5 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 903: Incorrect - 3 + 4 = 7 (left: 4 7 13)  
+13 + 4 = 17 (left: 7 17)
+7 + 17 = 24 (left: 24)  
+7 + 17 = 24 (left: 24)  
+
+Solving task 918: 2 2 7 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 901: Incorrect - 7 - 2 = 5 (left: 1 4 5)
+5 - 1 = 4 (left: 4 4 5)  
+5 + 4 = 9 (left: 4 9 4)  
+9 - 4 = 5 (left: 4 4 5)
+
+Solving task 919: 3 3 6 7
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 902: Incorrect - 2 + 8 = 10 (left: 10 5 11)  
+10 - 5 = 5 (left: 5 11 5)  
+5 + 11 = 16 (left: 5 5 16)  
+16 - 5 = 11 (left: 5 11)  
+
+Solving task 920: 1 5 9 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 912: Incorrect - 4 + 6 = 10 (left: 6 9 10)  
+10 / 2 = 5 (left: 6 5)
+6 + 5 = 11 (left: 11 5)  
+11 + 5 = 16 (left: 16)
+
+Solving task 921: 5 6 7 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 913: Incorrect - 8 - 1 = 7 (left: 4 4 7)
+7 - 4 = 3 (left: 3 4 4)
+4 - 3 = 1 (left: 1 4 4)  
+1 + 4 = 5 (left: 4 4 5)  
+
+Solving task 922: 5 5 8 10
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 917: Incorrect - 4 + 1 = 5 (left: 5 5 13)  
+13 - 5 = 8 (left: 5 8)
+So, possible next steps:
+14 / 2 = 7 (left: 7 8 8)
+
+Solving task 923: 2 4 6 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 911: Incorrect - 13 - 1 = 12 (left: 2 12 8)
+8 / 2 = 4 (left: 4 12 4)
+12 - 4 = 8 (left: 4 8 4)  
+8 / 4 = 2 (left: 2 4 4)  
+
+Solving task 924: 6 7 8 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 915: Incorrect - 3 + 4 = 7 (left: 6 7 11)  
+11 + 6 = 17 (left: 7 17)  
+7 + 17 = 24 (left: 24)  
+7 + 17 = 24 (left: 24)  
+
+Solving task 925: 7 9 9 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 920: Incorrect - 13 - 1 = 12 (left: 5 9 12)
+5 + 9 = 14 (left: 12 14)  
+14 - 12 = 2 (left: 2)
+14 / 2 = 7 (left: 7 8 8)  
+
+Solving task 926: 3 6 9 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 919: Incorrect - 7 - 3 = 4 (left: 3 6 4)  
+6 - 3 = 3 (left: 3 4 3)  
+4 - 3 = 1 (left: 3 1 3)  
+1 + 3 = 4 (left: 3 4 4)  
+
+Solving task 927: 6 9 12 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 918: Incorrect - 12 - 2 = 10 (left: 2 7 10)  
+7 - 2 = 5 (left: 5 10 10)
+10 / 5 = 2 (left: 2 10 10)  
+10 / 2 = 5 (left: 5 10 10)  
+
+Solving task 928: 4 7 9 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 916: Incorrect - 2 + 8 = 10 (left: 4 9 10)  
+9 - 4 = 5 (left: 5 9 10)  
+10 - 9 = 1 (left: 5 1 10)
+10 + 1 = 11 (left: 5 11)  
+
+Solving task 929: 5 6 8 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 914: Incorrect - 11 - 1 = 10 (left: 5 10 10)
+10 + 5 = 15 (left: 5 10 15)  
+5 + 10 = 15 (left: 15 15)  
+15 + 15 = 30 (left: 15 15 30)
+
+Solving task 930: 2 4 6 7
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 922: Incorrect - etc.
+- 14 - 8 = 6 (left: 2 6 8)
+8 + 2 = 10 (left: 6 8 10)
+8 - 6 = 2 (left: 2 10 10)  
+
+Solving task 931: 2 5 10 10
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 923: Incorrect - 4 / 2 = 2 (left: 2 6 2)
+2 + 6 = 8 (left: 2 8 2)  
+8 / 2 = 4 (left: 2 4 2)  
+2 * 2 = 4 (left: 4 4 2)
+
+Solving task 932: 6 6 7 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 924: Incorrect - 6 + 7 = 13 (left: 8 11 13)
+13 - 8 = 5 (left: 5 11)  
+11 - 5 = 6 (left: 6 5)
+6 + 5 = 11 (left: 11)  
+
+Solving task 933: 6 9 9 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 925: Incorrect - 9 - 7 = 2 (left: 2 9 13)
+13 - 9 = 4 (left: 2 4 9)  
+9 - 2 = 7 (left: 4 7 9)  
+4 + 7 = 11 (left: 9 11 9)  
+
+Solving task 934: 5 8 11 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 921: Incorrect - 13 - 6 = 7 (left: 5 7 7)
+5 + 7 = 12 (left: 7 7 12)  
+12 - 7 = 5 (left: 5 7 12)  
+12 - 5 = 7 (left: 7 7 12)
+
+Solving task 935: 5 6 8 10
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 926: Incorrect - 9 - 6 = 3 (left: 3 12 3)
+12 + 3 = 15 (left: 15 3 3)
+3 * 3 = 9 (left: 15 9 3)
+9 - 3 = 6 (left: 15 6 3)  
+
+Solving task 936: 6 11 12 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 927: Incorrect - 12 + 13 = 25 (left: 6 9 25)  
+25 - 9 = 16 (left: 6 16)  
+Possible next steps:
+14 / 2 = 7 (left: 7 8 8)
+
+Solving task 937: 2 2 8 8
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 929: Incorrect - 8 - 6 = 2 (left: 2 5 12)  
+12 / 2 = 6 (left: 6 5)
+6 + 5 = 11 (left: 6 5 11)
+11 + 5 = 16 (left: 6 16)  
+
+Solving task 938: 2 7 12 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 928: Incorrect - 13 - 9 = 4 (left: 4 7 4)
+7 - 4 = 3 (left: 3 4 4)  
+3 * 4 = 12 (left: 4 12 4)
+12 / 4 = 3 (left: 3 4 4)  
+
+Solving task 939: 2 6 8 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 930: Incorrect - 6 + 2 = 8 (left: 4 7 8)  
+7 - 4 = 3 (left: 3 8 8)  
+8 - 3 = 5 (left: 5 8 8)  
+8 - 5 = 3 (left: 3 8 8)
+
+Solving task 940: 3 4 9 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 931: Incorrect - 5 + 10 = 15 (left: 2 10 15)  
+15 - 10 = 5 (left: 5 2 2)  
+5 - 2 = 3 (left: 2 2 3)
+2 + 2 = 4 (left: 3 4 3)  
+
+Solving task 941: 4 5 10 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 933: Incorrect - 6 + 9 = 15 (left: 9 11 15)
+11 - 9 = 2 (left: 15 2)  
+15 + 2 = 17 (left: 17)  
+17 + 0 = 17 (left: 17)
+
+Solving task 942: 1 2 7 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 937: Incorrect - 8 - 2 = 6 (left: 2 8 6)  
+8 / 2 = 4 (left: 4 6)  
+4 * 6 = 24 (left: 24)
+4 * 6 = 24 (left: 24)  
+
+Solving task 943: 4 5 6 8
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 932: Incorrect - 6 / 6 = 1 (left: 1 7 12)  
+12 - 1 = 11 (left: 11 7 8)
+8 - 7 = 1 (left: 11 1 8)  
+8 - 1 = 7 (left: 7 11)
+
+Solving task 944: 6 10 12 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 934: Incorrect - 12 - 8 = 4 (left: 5 11 4)  
+5 + 11 = 16 (left: 4 16)  
+16 - 4 = 12 (left: 12)
+12 / 2 = 6 (left: 6 8 14)  
+
+Solving task 945: 1 3 9 9
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 935: Incorrect - 8 - 6 = 2 (left: 2 10 5)  
+10 - 5 = 5 (left: 2 5 5)
+5 / 5 = 1 (left: 1 2 5)
+1 + 2 = 3 (left: 3 5)  
+
+Solving task 946: 1 4 4 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 936: Incorrect - 11 + 13 = 24 (left: 6 12 24)
+6 + 12 = 18 (left: 18 24)  
+18 / 24 = 0.75 (left: 0.75 24)  
+0.75 * 24 = 18 (left: 18)
+
+Solving task 947: 2 3 9 10
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 940: Incorrect - 13 - 4 = 9 (left: 3 9 9)  
+9 / 3 = 3 (left: 3 9 12)  
+9 + 12 = 21 (left: 3 21)  
+3 + 21 = 24 (left: 24)  
+
+Solving task 948: 1 2 3 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 938: Incorrect - 13 - 12 = 1 (left: 2 7 1)  
+7 - 1 = 6 (left: 2 6 1)  
+6 + 1 = 7 (left: 2 7 8)  
+8 + 2 = 10 (left: 7 10)  
+
+Solving task 949: 1 6 6 6
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 942: Incorrect - 11 / 1 = 11 (left: 2 7 11)
+7 - 2 = 5 (left: 5 11)  
+5 + 11 = 16 (left: 16)
+16 + 8 = 24 (left: 24)
+
+Solving task 950: 1 2 2 9
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 939: Incorrect - 12 - 8 = 4 (left: 2 6 4)  
+6 / 2 = 3 (left: 3 4 4)  
+4 - 3 = 1 (left: 1 4 4)
+1 + 4 = 5 (left: 4 4 5)  
+
+Solving task 951: 1 3 6 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 944: Incorrect - 13 - 6 = 7 (left: 10 12 7)  
+12 / 6 = 2 (left: 7 2)  
+7 + 2 = 9 (left: 9)
+9 + 8 = 17 (left: 17)
+
+Solving task 952: 5 10 12 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 951: Incorrect - 6 - 3 = 3 (left: 1 3 3)
+3 + 1 = 4 (left: 3 4 3)  
+3 + 4 = 7 (left: 3 7)  
+3 + 7 = 10 (left: 10)  
+
+Solving task 953: 2 3 6 6
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 945: Incorrect - 9 / 3 = 3 (left: 1 3 3)
+3 + 1 = 4 (left: 3 4 3)
+3 + 3 = 6 (left: 4 6)  
+4 * 6 = 24 (left: 24)
+
+Solving task 954: 6 7 10 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 948: Incorrect - 13 - 1 = 12 (left: 2 3 12)  
+2 + 3 = 5 (left: 5 12)  
+**Possible next steps:**
+14 / 2 = 7 (left: 7 8 8)
+
+Solving task 955: 7 8 8 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 947: Incorrect - 9 - 3 = 6 (left: 2 6 10)  
+10 + 2 = 12 (left: 6 12 8)  
+8 - 6 = 2 (left: 2 12 6)  
+6 - 2 = 4 (left: 4 12 6)  
+
+Solving task 956: 3 4 6 8
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 943: Incorrect - 5 + 6 = 11 (left: 4 8 11)
+8 - 4 = 4 (left: 4 11 4)  
+11 - 4 = 7 (left: 7 4 4)
+7 - 4 = 3 (left: 3 4 4)  
+
+Solving task 957: 1 7 9 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 949: Incorrect - 6 / 6 = 1 (left: 1 6 6)  
+6 + 1 = 7 (left: 7 6 6)  
+6 + 6 = 12 (left: 7 12)  
+7 + 12 = 19 (left: 19)  
+
+Solving task 958: 2 3 6 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 941: Incorrect - 5 + 10 = 15 (left: 4 15 12)  
+15 - 12 = 3 (left: 4 3 12)
+12 - 3 = 9 (left: 4 9 4)  
+9 - 4 = 5 (left: 4 4 5)  
+
+Solving task 959: 2 2 5 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 950: Incorrect - 1 + 2 = 3 (left: 2 2 3)  
+2 + 2 = 4 (left: 3 4 3)  
+3 + 3 = 6 (left: 4 6)  
+4 * 6 = 24 (left: 24)
+
+Solving task 960: 2 6 8 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 946: Incorrect - 11 - 1 = 10 (left: 4 4 10)  
+10 - 4 = 6 (left: 4 6 4)
+6 / 2 = 3 (left: 4 3 4)
+4 + 4 = 8 (left: 3 4 8)
+
+Solving task 961: 8 8 10 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 952: Incorrect - 10 + 13 = 23 (left: 5 12 23)  
+23 - 12 = 11 (left: 5 11)  
+5 + 11 = 16 (left: 16)
+16 + 8 = 24 (left: 24)  
+
+Solving task 962: 1 3 8 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 959: Incorrect - 12 - 2 = 10 (left: 2 5 10)
+10 - 5 = 5 (left: 2 5 5)  
+5 * 2 = 10 (left: 5 10 5)
+5 + 10 = 15 (left: 5 5 15)  
+
+Solving task 963: 4 4 7 10
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 953: Incorrect - 6 - 3 = 3 (left: 2 3 3)  
+3 / 3 = 1 (left: 2 1 3)
+3 - 1 = 2 (left: 2 2 3)
+2 + 2 = 4 (left: 3 4 3)  
+
+Solving task 964: 1 7 10 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 957: Incorrect - 11 - 1 = 10 (left: 7 9 10)  
+10 - 7 = 3 (left: 3 9 10)
+9 / 3 = 3 (left: 3 10 10)
+10 - 3 = 7 (left: 7 10 10)
+
+Solving task 965: 1 9 10 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 956: Incorrect - 8 - 4 = 4 (left: 3 4 4)  
+4 - 3 = 1 (left: 1 4 4)  
+1 + 4 = 5 (left: 4 4 5)  
+4 + 4 = 8 (left: 5 8 4)  
+
+Solving task 966: 3 3 4 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 955: Incorrect - 8 / 8 = 1 (left: 1 7 12)
+7 / 1 = 7 (left: 7 12 7)
+12 - 7 = 5 (left: 5 7 7)  
+5 + 7 = 12 (left: 7 7 12)
+
+Solving task 967: 2 5 7 7
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 954: Incorrect - 6 + 7 = 13 (left: 10 12 13)
+10 - 12 = -2 (left: -2 13)  
+-2 + 13 = 11 (left: -2 11 13)  
+-2 + 11 = 9 (left: 9 13)  
+
+Solving task 968: 3 9 10 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 961: Incorrect - 10 + 8 = 18 (left: 12 18 12)  
+12 + 12 = 24 (left: 12 12 24)  
+12 / 12 = 1 (left: 1 24 24)  
+24 / 1 = 24 (left: 24 24 24)  
+
+Solving task 969: 2 3 4 7
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 960: Incorrect - 13 - 8 = 5 (left: 2 6 5)  
+2 + 6 = 8 (left: 8 5 8)  
+8 - 5 = 3 (left: 3 8 8)  
+8 - 3 = 5 (left: 5 8 8)  
+
+Solving task 970: 4 4 8 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 967: Incorrect - 5 + 2 = 7 (left: 7 7 7)
+7 - 7 = 0 (left: 0 7 7)
+Possible next steps:
+- 14 / 2 = 7 (left: 7 8 8)
+
+Solving task 971: 1 2 6 10
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 958: Incorrect - 6 + 3 = 9 (left: 2 9 13)  
+13 - 2 = 11 (left: 11 9 13)  
+13 - 9 = 4 (left: 11 4 9)
+9 - 4 = 5 (left: 5 11)  
+
+Solving task 972: 1 5 12 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 962: Incorrect - 13 - 1 = 12 (left: 3 8 12)  
+3 + 8 = 11 (left: 11 12 8)  
+12 - 8 = 4 (left: 4 11 8)  
+11 - 4 = 7 (left: 7 8 8)
+
+Solving task 973: 5 6 6 8
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 968: Incorrect - 13 - 10 = 3 (left: 3 9 3)
+3 + 9 = 12 (left: 3 12 3)  
+12 + 3 = 15 (left: 15 3 3)
+3 + 3 = 6 (left: 15 6 3)
+
+Solving task 974: 7 7 8 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 964: Incorrect - 7 - 1 = 6 (left: 6 10 13)  
+13 - 6 = 7 (left: 7 10)  
+So, possible next steps:
+- 14 / 2 = 7 (left: 7 8 8)
+
+Solving task 975: 1 3 7 10
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 963: Incorrect - 4 / 4 = 1 (left: 1 7 10)  
+1 * 7 = 7 (left: 10 7 7)  
+10 - 7 = 3 (left: 3 7 7)
+3 + 7 = 10 (left: 7 7 10)  
+
+Solving task 976: 3 3 9 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 966: Incorrect - 3 * 3 = 9 (left: 4 9 11)  
+9 - 4 = 5 (left: 11 5)
+11 + 5 = 16 (left: 16)
+16 / 8 = 2 (left: 2 16 16)
+
+Solving task 977: 3 5 7 10
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 965: Incorrect - 13 - 10 = 3 (left: 1 9 3)
+9 - 1 = 8 (left: 3 8 1)  
+8 - 1 = 7 (left: 3 7 1)  
+7 / 1 = 7 (left: 3 7 7)  
+
+Solving task 978: 4 10 12 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 971: Incorrect - 1 + 2 = 3 (left: 3 6 10)  
+10 - 3 = 7 (left: 6 7)  
+7 - 6 = 1 (left: 1)  
+1 + 1 = 2 (left: 1 2)
+
+Solving task 979: 2 3 10 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 969: Incorrect - 2 + 3 = 5 (left: 4 5 7)  
+7 - 5 = 2 (left: 4 2 5)
+5 + 4 = 9 (left: 2 9 5)  
+9 + 2 = 11 (left: 5 11)
+
+Solving task 980: 3 4 6 6
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 970: Incorrect - 8 - 4 = 4 (left: 4 4 12)  
+12 - 4 = 8 (left: 4 8 4)
+4 + 8 = 12 (left: 4 12 4)  
+12 / 4 = 3 (left: 3 4 4)  
+
+Solving task 981: 5 8 8 8
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 973: Incorrect - 8 - 6 = 2 (left: 5 2 6)
+5 + 2 = 7 (left: 6 7)  
+6 + 7 = 13 (left: 13)  
+13 + 13 = 26 (left: 26)
+
+Solving task 982: 6 8 8 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 976: Incorrect - 12 / 3 = 4 (left: 3 9 4)
+3 + 9 = 12 (left: 4 12)  
+4 + 12 = 16 (left: 16)  
+16 + 8 = 24 (left: 24)
+
+Solving task 983: 2 3 4 9
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 977: Incorrect - 3 + 7 = 10 (left: 5 10 10)  
+10 / 5 = 2 (left: 2 10 10)
+10 - 2 = 8 (left: 8 10 8)
+10 - 8 = 2 (left: 8 8 2)
+
+Solving task 984: 2 6 7 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 975: Incorrect - 10 - 3 = 7 (left: 1 7 10)
+1 * 7 = 7 (left: 7 10 7)  
+10 - 7 = 3 (left: 3 7 7)  
+3 + 7 = 10 (left: 7 7 10)  
+
+Solving task 985: 5 9 12 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 972: Incorrect - 12 - 5 = 7 (left: 1 7 12)  
+12 - 1 = 11 (left: 7 11 12)  
+12 + 7 = 19 (left: 11 12 19)  
+19 - 12 = 7 (left: 7 11)  
+
+Solving task 986: 1 2 7 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 974: Incorrect - 11 - 7 = 4 (left: 4 8 11)  
+11 - 4 = 7 (left: 8 7 4)  
+8 - 4 = 4 (left: 7 4 4)
+7 - 4 = 3 (left: 3 4 4)
+
+Solving task 987: 2 4 5 6
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 981: Incorrect - 8 - 5 = 3 (left: 3 8 8)  
+8 - 3 = 5 (left: 5 8 8)  
+
+8 - 5 = 3 (left: 3 8 8)
+
+Solving task 988: 5 5 8 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 979: Incorrect - 12 / 3 = 4 (left: 2 4 10)  
+4 + 2 = 6 (left: 6 10 4)  
+10 - 4 = 6 (left: 6 6 4)  
+6 / 2 = 3 (left: 3 6 4)  
+
+Solving task 989: 2 3 3 10
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 980: Incorrect - 6 / 2 = 3 (left: 3 4 3)  
+3 + 4 = 7 (left: 3 7 3)  
+7 - 3 = 4 (left: 3 4 3)  
+3 + 4 = 7 (left: 3 7 3)  
+
+Solving task 990: 3 4 8 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 982: Incorrect - 8 - 8 = 0 (left: 0 6 12)
+12 - 6 = 6 (left: 6 6 6)  
+6 - 6 = 0 (left: 0 6 6)
+0 + 6 = 6 (left: 6 6 6)
+
+Solving task 991: 2 4 6 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 978: Incorrect - (Other operations are possible depending on allowed operations)
+- 14 - 8 = 6 (left: 2 8 6)
+8 / 2 = 4 (left: 2 4 6)  
+6 / 2 = 3 (left: 3 4 6)
+
+Solving task 992: 2 2 8 9
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 983: Incorrect - 3 + 4 = 7 (left: 2 7 9)
+7 - 2 = 5 (left: 5 9 7)
+7 + 5 = 12 (left: 7 7 12)  
+12 - 7 = 5 (left: 7 5 12)  
+
+Solving task 993: 1 5 6 7
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 985: Incorrect - 12 - 5 = 7 (left: 7 9 12)  
+12 - 7 = 5 (left: 9 5)
+9 + 5 = 14 (left: 14)
+14 + 14 = 28 (left: 14 14 28)
+
+Solving task 994: 5 8 10 11
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 984: Incorrect - 2 * 6 = 12 (left: 7 11 12)  
+12 - 11 = 1 (left: 1 7 12)
+...
+7 + 3 = 10 (left: 5 10 10)
+
+Solving task 995: 4 4 9 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 988: Incorrect - 13 - 5 = 8 (left: 5 8 8)  
+8 - 5 = 3 (left: 3 8 8)  
+8 - 3 = 5 (left: 5 8 8)  
+8 - 5 = 3 (left: 3 8 8)
+
+Solving task 996: 2 5 6 6
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 986: Incorrect - 7 - 2 = 5 (left: 1 5 12)  
+12 - 1 = 11 (left: 5 11)  
+5 + 11 = 16 (left: 16)
+16 + 8 = 24 (left: 24)
+
+Solving task 997: 2 4 9 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 990: Incorrect - 8 + 12 = 20 (left: 3 4 20)  
+20 / 4 = 5 (left: 3 5)  
+3 - 5 = -2 (left: -2)  
+-2 + 8 = 6 (left: 6 8 14)
+
+Solving task 998: 4 8 11 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 987: Incorrect - 6 - 2 = 4 (left: 4 4 5)  
+5 + 4 = 9 (left: 4 9 4)  
+9 - 4 = 5 (left: 4 4 5)
+4 + 4 = 8 (left: 5 8 4)  
+
+Solving task 999: 4 9 10 13
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 989: Incorrect - 3 + 2 = 5 (left: 3 5 10)  
+5 - 3 = 2 (left: 2 10 8)  
+8 - 2 = 6 (left: 6 10 8)  
+10 - 8 = 2 (left: 6 2 8)  
+
+Solving task 1000: 3 3 5 12
+functools.partial(<function gpt at 0x7f12f21f6680>, model='gpt-4.1-nano', temperature=0.7)
+Task 991: Incorrect - 4 + 11 = 15 (left: 2 15 6)
+15 / 3 = 5 (if 3 is obtainable)  
+15 / 3 = 5 (left: 5 8 8)
+8 - 5 = 3 (left: 3 8 8)  
+
+Task 995: Incorrect - 12 / 4 = 3 (left: 3 4 9)  
+9 - 4 = 5 (left: 3 5)
+5 - 3 = 2 (left: 2)
+14 /  2 = 7 (left: 7 8 8)  
+
+Task 996: Incorrect - 5 - 2 = 3 (left: 3 6 6)  
+6 / 3 = 2 (left: 2 6 6)  
+2 + 6 = 8 (left: 6 8 6)  
+6 + 6 = 12 (left: 6 8 12)  
+
+Task 992: Incorrect - 8 - 2 = 6 (left: 2 6 9)  
+9 - 6 = 3 (left: 2 3 9)
+9 - 2 = 7 (left: 3 7 9)  
+9 + 3 = 12 (left: 7 12 9)  
+
+Task 993: Incorrect - 5 + 6 = 11 (left: 1 7 11)  
+11 + 1 = 12 (left: 12 7 1)  
+12 - 7 = 5 (left: 5 1 12)  
+12 - 1 = 11 (left: 5 11)
+
+Task 994: Incorrect - 8 - 5 = 3 (left: 3 10 11)
+3 + 10 = 13 (left: 11 13)  
+11 + 13 = 24 (left: 24)  
+11 + 13 = 24 (left: 24)  
+
+Task 998: Incorrect - 11 + 4 = 15 (left: 13 15 8)  
+13 - 8 = 5 (left: 15 5)  
+15 - 5 = 10 (left: 10)
+10 / 2 = 5 (left: 5 8)  
+
+Task 999: Incorrect - 4 + 9 = 13 (left: 10 13 13)
+13 - 13 = 0 (left: 0 10 13)
+0 + 10 = 10 (left: 10 13 10)  
+13 - 10 = 3 (left: 3 10 10)  
+
+Task 997: Incorrect - 12 - 9 = 3 (left: 2 4 3)
+4 + 2 = 6 (left: 3 6 4)  
+3 + 6 = 9 (left: 4 9 4)  
+9 - 4 = 5 (left: 4 4 5)  
+
+Task 1000: Incorrect - 12 / 3 = 4 (left: 4 5 3)  
+4 / 2 = 2 (left: 2 5 3)
+5 - 2 = 3 (left: 3 3 3)
+3 * 3 = 9 (left: 3 3 9)  
+
+Task 901: Incorrect - 7 - 2 = 5 (left: 1 4 5)
+5 - 1 = 4 (left: 4 4 5)  
+5 + 4 = 9 (left: 4 9 4)  
+9 - 4 = 5 (left: 4 4 5)
+
+Task 902: Incorrect - 2 + 8 = 10 (left: 10 5 11)  
+10 - 5 = 5 (left: 5 11 5)  
+5 + 11 = 16 (left: 5 5 16)  
+16 - 5 = 11 (left: 5 11)  
+
+Task 903: Incorrect - 3 + 4 = 7 (left: 4 7 13)  
+13 + 4 = 17 (left: 7 17)
+7 + 17 = 24 (left: 24)  
+7 + 17 = 24 (left: 24)  
+
+Task 904: Incorrect - ...
+14 / 2 = 7 (left: 7 8 8)
+7 - 8 = -1 (left: -1 8 8)  
+-1 + 8 = 7 (left: 7 8 8)
+
+Task 905: Incorrect - 13 - 11 = 2 (left: 2 1 11)  
+1 * 11 = 11 (left: 2 11 11)
+11 * 2 = 22 (left: 22 11 11)
+22 / 11 = 2 (left: 2 11 11)
+
+Task 906: Incorrect - 11 / 8 = 1.375 (not integer, discard)
+11 - 8 = 3 (left: 3 8 8)
+8 - 3 = 5 (left: 5 8 8)  
+8 - 5 = 3 (left: 3 8 8)  
+
+Task 907: Incorrect - 9 - 6 = 3 (left: 2 3 3)  
+3 + 3 = 6 (left: 2 6 3)
+6 - 2 = 4 (left: 3 4 3)  
+3 + 4 = 7 (left: 3 7 3)  
+
+Task 908: Incorrect - 3 + 9 = 12 (left: 1 5 12)  
+12 - 1 = 11 (left: 5 11)  
+5 + 11 = 16 (left: 16)
+16 + 8 = 24 (left: 24)  
+
+Task 909: Incorrect - 7 + 3 = 10 (left: 10 12 3)
+10 - 3 = 7 (left: 7 12 3)
+12 - 7 = 5 (left: 3 5 3)  
+3 + 5 = 8 (left: 3 8 3)  
+
+Task 910: Incorrect - 4 + 5 = 9 (left: 7 9 9)  
+9 - 9 = 0 (left: 0 7 9)
+9 - 0 = 9 (left: 7 9 9)  
+9 - 7 = 2 (left: 2 9 9)
+
+Task 911: Incorrect - 13 - 1 = 12 (left: 2 12 8)
+8 / 2 = 4 (left: 4 12 4)
+12 - 4 = 8 (left: 4 8 4)  
+8 / 4 = 2 (left: 2 4 4)  
+
+Task 912: Incorrect - 4 + 6 = 10 (left: 6 9 10)  
+10 / 2 = 5 (left: 6 5)
+6 + 5 = 11 (left: 11 5)  
+11 + 5 = 16 (left: 16)
+
+Task 913: Incorrect - 8 - 1 = 7 (left: 4 4 7)
+7 - 4 = 3 (left: 3 4 4)
+4 - 3 = 1 (left: 1 4 4)  
+1 + 4 = 5 (left: 4 4 5)  
+
+Task 914: Incorrect - 11 - 1 = 10 (left: 5 10 10)
+10 + 5 = 15 (left: 5 10 15)  
+5 + 10 = 15 (left: 15 15)  
+15 + 15 = 30 (left: 15 15 30)
+
+Task 915: Incorrect - 3 + 4 = 7 (left: 6 7 11)  
+11 + 6 = 17 (left: 7 17)  
+7 + 17 = 24 (left: 24)  
+7 + 17 = 24 (left: 24)  
+
+Task 916: Incorrect - 2 + 8 = 10 (left: 4 9 10)  
+9 - 4 = 5 (left: 5 9 10)  
+10 - 9 = 1 (left: 5 1 10)
+10 + 1 = 11 (left: 5 11)  
+
+Task 917: Incorrect - 4 + 1 = 5 (left: 5 5 13)  
+13 - 5 = 8 (left: 5 8)
+So, possible next steps:
+14 / 2 = 7 (left: 7 8 8)
+
+Task 918: Incorrect - 12 - 2 = 10 (left: 2 7 10)  
+7 - 2 = 5 (left: 5 10 10)
+10 / 5 = 2 (left: 2 10 10)  
+10 / 2 = 5 (left: 5 10 10)  
+
+Task 919: Incorrect - 7 - 3 = 4 (left: 3 6 4)  
+6 - 3 = 3 (left: 3 4 3)  
+4 - 3 = 1 (left: 3 1 3)  
+1 + 3 = 4 (left: 3 4 4)  
+
+Task 920: Incorrect - 13 - 1 = 12 (left: 5 9 12)
+5 + 9 = 14 (left: 12 14)  
+14 - 12 = 2 (left: 2)
+14 / 2 = 7 (left: 7 8 8)  
+
+Task 921: Incorrect - 13 - 6 = 7 (left: 5 7 7)
+5 + 7 = 12 (left: 7 7 12)  
+12 - 7 = 5 (left: 5 7 12)  
+12 - 5 = 7 (left: 7 7 12)
+
+Task 922: Incorrect - etc.
+- 14 - 8 = 6 (left: 2 6 8)
+8 + 2 = 10 (left: 6 8 10)
+8 - 6 = 2 (left: 2 10 10)  
+
+Task 923: Incorrect - 4 / 2 = 2 (left: 2 6 2)
+2 + 6 = 8 (left: 2 8 2)  
+8 / 2 = 4 (left: 2 4 2)  
+2 * 2 = 4 (left: 4 4 2)
+
+Task 924: Incorrect - 6 + 7 = 13 (left: 8 11 13)
+13 - 8 = 5 (left: 5 11)  
+11 - 5 = 6 (left: 6 5)
+6 + 5 = 11 (left: 11)  
+
+Task 925: Incorrect - 9 - 7 = 2 (left: 2 9 13)
+13 - 9 = 4 (left: 2 4 9)  
+9 - 2 = 7 (left: 4 7 9)  
+4 + 7 = 11 (left: 9 11 9)  
+
+Task 926: Incorrect - 9 - 6 = 3 (left: 3 12 3)
+12 + 3 = 15 (left: 15 3 3)
+3 * 3 = 9 (left: 15 9 3)
+9 - 3 = 6 (left: 15 6 3)  
+
+Task 927: Incorrect - 12 + 13 = 25 (left: 6 9 25)  
+25 - 9 = 16 (left: 6 16)  
+Possible next steps:
+14 / 2 = 7 (left: 7 8 8)
+
+Task 928: Incorrect - 13 - 9 = 4 (left: 4 7 4)
+7 - 4 = 3 (left: 3 4 4)  
+3 * 4 = 12 (left: 4 12 4)
+12 / 4 = 3 (left: 3 4 4)  
+
+Task 929: Incorrect - 8 - 6 = 2 (left: 2 5 12)  
+12 / 2 = 6 (left: 6 5)
+6 + 5 = 11 (left: 6 5 11)
+11 + 5 = 16 (left: 6 16)  
+
+Task 930: Incorrect - 6 + 2 = 8 (left: 4 7 8)  
+7 - 4 = 3 (left: 3 8 8)  
+8 - 3 = 5 (left: 5 8 8)  
+8 - 5 = 3 (left: 3 8 8)
+
+Task 931: Incorrect - 5 + 10 = 15 (left: 2 10 15)  
+15 - 10 = 5 (left: 5 2 2)  
+5 - 2 = 3 (left: 2 2 3)
+2 + 2 = 4 (left: 3 4 3)  
+
+Task 932: Incorrect - 6 / 6 = 1 (left: 1 7 12)  
+12 - 1 = 11 (left: 11 7 8)
+8 - 7 = 1 (left: 11 1 8)  
+8 - 1 = 7 (left: 7 11)
+
+Task 933: Incorrect - 6 + 9 = 15 (left: 9 11 15)
+11 - 9 = 2 (left: 15 2)  
+15 + 2 = 17 (left: 17)  
+17 + 0 = 17 (left: 17)
+
+Task 934: Incorrect - 12 - 8 = 4 (left: 5 11 4)  
+5 + 11 = 16 (left: 4 16)  
+16 - 4 = 12 (left: 12)
+12 / 2 = 6 (left: 6 8 14)  
+
+Task 935: Incorrect - 8 - 6 = 2 (left: 2 10 5)  
+10 - 5 = 5 (left: 2 5 5)
+5 / 5 = 1 (left: 1 2 5)
+1 + 2 = 3 (left: 3 5)  
+
+Task 936: Incorrect - 11 + 13 = 24 (left: 6 12 24)
+6 + 12 = 18 (left: 18 24)  
+18 / 24 = 0.75 (left: 0.75 24)  
+0.75 * 24 = 18 (left: 18)
+
+Task 937: Incorrect - 8 - 2 = 6 (left: 2 8 6)  
+8 / 2 = 4 (left: 4 6)  
+4 * 6 = 24 (left: 24)
+4 * 6 = 24 (left: 24)  
+
+Task 938: Incorrect - 13 - 12 = 1 (left: 2 7 1)  
+7 - 1 = 6 (left: 2 6 1)  
+6 + 1 = 7 (left: 2 7 8)  
+8 + 2 = 10 (left: 7 10)  
+
+Task 939: Incorrect - 12 - 8 = 4 (left: 2 6 4)  
+6 / 2 = 3 (left: 3 4 4)  
+4 - 3 = 1 (left: 1 4 4)
+1 + 4 = 5 (left: 4 4 5)  
+
+Task 940: Incorrect - 13 - 4 = 9 (left: 3 9 9)  
+9 / 3 = 3 (left: 3 9 12)  
+9 + 12 = 21 (left: 3 21)  
+3 + 21 = 24 (left: 24)  
+
+Task 941: Incorrect - 5 + 10 = 15 (left: 4 15 12)  
+15 - 12 = 3 (left: 4 3 12)
+12 - 3 = 9 (left: 4 9 4)  
+9 - 4 = 5 (left: 4 4 5)  
+
+Task 942: Incorrect - 11 / 1 = 11 (left: 2 7 11)
+7 - 2 = 5 (left: 5 11)  
+5 + 11 = 16 (left: 16)
+16 + 8 = 24 (left: 24)
+
+Task 943: Incorrect - 5 + 6 = 11 (left: 4 8 11)
+8 - 4 = 4 (left: 4 11 4)  
+11 - 4 = 7 (left: 7 4 4)
+7 - 4 = 3 (left: 3 4 4)  
+
+Task 944: Incorrect - 13 - 6 = 7 (left: 10 12 7)  
+12 / 6 = 2 (left: 7 2)  
+7 + 2 = 9 (left: 9)
+9 + 8 = 17 (left: 17)
+
+Task 945: Incorrect - 9 / 3 = 3 (left: 1 3 3)
+3 + 1 = 4 (left: 3 4 3)
+3 + 3 = 6 (left: 4 6)  
+4 * 6 = 24 (left: 24)
+
+Task 946: Incorrect - 11 - 1 = 10 (left: 4 4 10)  
+10 - 4 = 6 (left: 4 6 4)
+6 / 2 = 3 (left: 4 3 4)
+4 + 4 = 8 (left: 3 4 8)
+
+Task 947: Incorrect - 9 - 3 = 6 (left: 2 6 10)  
+10 + 2 = 12 (left: 6 12 8)  
+8 - 6 = 2 (left: 2 12 6)  
+6 - 2 = 4 (left: 4 12 6)  
+
+Task 948: Incorrect - 13 - 1 = 12 (left: 2 3 12)  
+2 + 3 = 5 (left: 5 12)  
+**Possible next steps:**
+14 / 2 = 7 (left: 7 8 8)
+
+Task 949: Incorrect - 6 / 6 = 1 (left: 1 6 6)  
+6 + 1 = 7 (left: 7 6 6)  
+6 + 6 = 12 (left: 7 12)  
+7 + 12 = 19 (left: 19)  
+
+Task 950: Incorrect - 1 + 2 = 3 (left: 2 2 3)  
+2 + 2 = 4 (left: 3 4 3)  
+3 + 3 = 6 (left: 4 6)  
+4 * 6 = 24 (left: 24)
+
+Task 951: Incorrect - 6 - 3 = 3 (left: 1 3 3)
+3 + 1 = 4 (left: 3 4 3)  
+3 + 4 = 7 (left: 3 7)  
+3 + 7 = 10 (left: 10)  
+
+Task 952: Incorrect - 10 + 13 = 23 (left: 5 12 23)  
+23 - 12 = 11 (left: 5 11)  
+5 + 11 = 16 (left: 16)
+16 + 8 = 24 (left: 24)  
+
+Task 953: Incorrect - 6 - 3 = 3 (left: 2 3 3)  
+3 / 3 = 1 (left: 2 1 3)
+3 - 1 = 2 (left: 2 2 3)
+2 + 2 = 4 (left: 3 4 3)  
+
+Task 954: Incorrect - 6 + 7 = 13 (left: 10 12 13)
+10 - 12 = -2 (left: -2 13)  
+-2 + 13 = 11 (left: -2 11 13)  
+-2 + 11 = 9 (left: 9 13)  
+
+Task 955: Incorrect - 8 / 8 = 1 (left: 1 7 12)
+7 / 1 = 7 (left: 7 12 7)
+12 - 7 = 5 (left: 5 7 7)  
+5 + 7 = 12 (left: 7 7 12)
+
+Task 956: Incorrect - 8 - 4 = 4 (left: 3 4 4)  
+4 - 3 = 1 (left: 1 4 4)  
+1 + 4 = 5 (left: 4 4 5)  
+4 + 4 = 8 (left: 5 8 4)  
+
+Task 957: Incorrect - 11 - 1 = 10 (left: 7 9 10)  
+10 - 7 = 3 (left: 3 9 10)
+9 / 3 = 3 (left: 3 10 10)
+10 - 3 = 7 (left: 7 10 10)
+
+Task 958: Incorrect - 6 + 3 = 9 (left: 2 9 13)  
+13 - 2 = 11 (left: 11 9 13)  
+13 - 9 = 4 (left: 11 4 9)
+9 - 4 = 5 (left: 5 11)  
+
+Task 959: Incorrect - 12 - 2 = 10 (left: 2 5 10)
+10 - 5 = 5 (left: 2 5 5)  
+5 * 2 = 10 (left: 5 10 5)
+5 + 10 = 15 (left: 5 5 15)  
+
+Task 960: Incorrect - 13 - 8 = 5 (left: 2 6 5)  
+2 + 6 = 8 (left: 8 5 8)  
+8 - 5 = 3 (left: 3 8 8)  
+8 - 3 = 5 (left: 5 8 8)  
+
+Task 961: Incorrect - 10 + 8 = 18 (left: 12 18 12)  
+12 + 12 = 24 (left: 12 12 24)  
+12 / 12 = 1 (left: 1 24 24)  
+24 / 1 = 24 (left: 24 24 24)  
+
+Task 962: Incorrect - 13 - 1 = 12 (left: 3 8 12)  
+3 + 8 = 11 (left: 11 12 8)  
+12 - 8 = 4 (left: 4 11 8)  
+11 - 4 = 7 (left: 7 8 8)
+
+Task 963: Incorrect - 4 / 4 = 1 (left: 1 7 10)  
+1 * 7 = 7 (left: 10 7 7)  
+10 - 7 = 3 (left: 3 7 7)
+3 + 7 = 10 (left: 7 7 10)  
+
+Task 964: Incorrect - 7 - 1 = 6 (left: 6 10 13)  
+13 - 6 = 7 (left: 7 10)  
+So, possible next steps:
+- 14 / 2 = 7 (left: 7 8 8)
+
+Task 965: Incorrect - 13 - 10 = 3 (left: 1 9 3)
+9 - 1 = 8 (left: 3 8 1)  
+8 - 1 = 7 (left: 3 7 1)  
+7 / 1 = 7 (left: 3 7 7)  
+
+Task 966: Incorrect - 3 * 3 = 9 (left: 4 9 11)  
+9 - 4 = 5 (left: 11 5)
+11 + 5 = 16 (left: 16)
+16 / 8 = 2 (left: 2 16 16)
+
+Task 967: Incorrect - 5 + 2 = 7 (left: 7 7 7)
+7 - 7 = 0 (left: 0 7 7)
+Possible next steps:
+- 14 / 2 = 7 (left: 7 8 8)
+
+Task 968: Incorrect - 13 - 10 = 3 (left: 3 9 3)
+3 + 9 = 12 (left: 3 12 3)  
+12 + 3 = 15 (left: 15 3 3)
+3 + 3 = 6 (left: 15 6 3)
+
+Task 969: Incorrect - 2 + 3 = 5 (left: 4 5 7)  
+7 - 5 = 2 (left: 4 2 5)
+5 + 4 = 9 (left: 2 9 5)  
+9 + 2 = 11 (left: 5 11)
+
+Task 970: Incorrect - 8 - 4 = 4 (left: 4 4 12)  
+12 - 4 = 8 (left: 4 8 4)
+4 + 8 = 12 (left: 4 12 4)  
+12 / 4 = 3 (left: 3 4 4)  
+
+Task 971: Incorrect - 1 + 2 = 3 (left: 3 6 10)  
+10 - 3 = 7 (left: 6 7)  
+7 - 6 = 1 (left: 1)  
+1 + 1 = 2 (left: 1 2)
+
+Task 972: Incorrect - 12 - 5 = 7 (left: 1 7 12)  
+12 - 1 = 11 (left: 7 11 12)  
+12 + 7 = 19 (left: 11 12 19)  
+19 - 12 = 7 (left: 7 11)  
+
+Task 973: Incorrect - 8 - 6 = 2 (left: 5 2 6)
+5 + 2 = 7 (left: 6 7)  
+6 + 7 = 13 (left: 13)  
+13 + 13 = 26 (left: 26)
+
+Task 974: Incorrect - 11 - 7 = 4 (left: 4 8 11)  
+11 - 4 = 7 (left: 8 7 4)  
+8 - 4 = 4 (left: 7 4 4)
+7 - 4 = 3 (left: 3 4 4)
+
+Task 975: Incorrect - 10 - 3 = 7 (left: 1 7 10)
+1 * 7 = 7 (left: 7 10 7)  
+10 - 7 = 3 (left: 3 7 7)  
+3 + 7 = 10 (left: 7 7 10)  
+
+Task 976: Incorrect - 12 / 3 = 4 (left: 3 9 4)
+3 + 9 = 12 (left: 4 12)  
+4 + 12 = 16 (left: 16)  
+16 + 8 = 24 (left: 24)
+
+Task 977: Incorrect - 3 + 7 = 10 (left: 5 10 10)  
+10 / 5 = 2 (left: 2 10 10)
+10 - 2 = 8 (left: 8 10 8)
+10 - 8 = 2 (left: 8 8 2)
+
+Task 978: Incorrect - (Other operations are possible depending on allowed operations)
+- 14 - 8 = 6 (left: 2 8 6)
+8 / 2 = 4 (left: 2 4 6)  
+6 / 2 = 3 (left: 3 4 6)
+
+Task 979: Incorrect - 12 / 3 = 4 (left: 2 4 10)  
+4 + 2 = 6 (left: 6 10 4)  
+10 - 4 = 6 (left: 6 6 4)  
+6 / 2 = 3 (left: 3 6 4)  
+
+Task 980: Incorrect - 6 / 2 = 3 (left: 3 4 3)  
+3 + 4 = 7 (left: 3 7 3)  
+7 - 3 = 4 (left: 3 4 3)  
+3 + 4 = 7 (left: 3 7 3)  
+
+Task 981: Incorrect - 8 - 5 = 3 (left: 3 8 8)  
+8 - 3 = 5 (left: 5 8 8)  
+
+8 - 5 = 3 (left: 3 8 8)
+
+Task 982: Incorrect - 8 - 8 = 0 (left: 0 6 12)
+12 - 6 = 6 (left: 6 6 6)  
+6 - 6 = 0 (left: 0 6 6)
+0 + 6 = 6 (left: 6 6 6)
+
+Task 983: Incorrect - 3 + 4 = 7 (left: 2 7 9)
+7 - 2 = 5 (left: 5 9 7)
+7 + 5 = 12 (left: 7 7 12)  
+12 - 7 = 5 (left: 7 5 12)  
+
+Task 984: Incorrect - 2 * 6 = 12 (left: 7 11 12)  
+12 - 11 = 1 (left: 1 7 12)
+...
+7 + 3 = 10 (left: 5 10 10)
+
+Task 985: Incorrect - 12 - 5 = 7 (left: 7 9 12)  
+12 - 7 = 5 (left: 9 5)
+9 + 5 = 14 (left: 14)
+14 + 14 = 28 (left: 14 14 28)
+
+Task 986: Incorrect - 7 - 2 = 5 (left: 1 5 12)  
+12 - 1 = 11 (left: 5 11)  
+5 + 11 = 16 (left: 16)
+16 + 8 = 24 (left: 24)
+
+Task 987: Incorrect - 6 - 2 = 4 (left: 4 4 5)  
+5 + 4 = 9 (left: 4 9 4)  
+9 - 4 = 5 (left: 4 4 5)
+4 + 4 = 8 (left: 5 8 4)  
+
+Task 988: Incorrect - 13 - 5 = 8 (left: 5 8 8)  
+8 - 5 = 3 (left: 3 8 8)  
+8 - 3 = 5 (left: 5 8 8)  
+8 - 5 = 3 (left: 3 8 8)
+
+Task 989: Incorrect - 3 + 2 = 5 (left: 3 5 10)  
+5 - 3 = 2 (left: 2 10 8)  
+8 - 2 = 6 (left: 6 10 8)  
+10 - 8 = 2 (left: 6 2 8)  
+
+Task 990: Incorrect - 8 + 12 = 20 (left: 3 4 20)  
+20 / 4 = 5 (left: 3 5)  
+3 - 5 = -2 (left: -2)  
+-2 + 8 = 6 (left: 6 8 14)
+
+Task 991: Incorrect - 4 + 11 = 15 (left: 2 15 6)
+15 / 3 = 5 (if 3 is obtainable)  
+15 / 3 = 5 (left: 5 8 8)
+8 - 5 = 3 (left: 3 8 8)  
+
+Task 992: Incorrect - 8 - 2 = 6 (left: 2 6 9)  
+9 - 6 = 3 (left: 2 3 9)
+9 - 2 = 7 (left: 3 7 9)  
+9 + 3 = 12 (left: 7 12 9)  
+
+Task 993: Incorrect - 5 + 6 = 11 (left: 1 7 11)  
+11 + 1 = 12 (left: 12 7 1)  
+12 - 7 = 5 (left: 5 1 12)  
+12 - 1 = 11 (left: 5 11)
+
+Task 994: Incorrect - 8 - 5 = 3 (left: 3 10 11)
+3 + 10 = 13 (left: 11 13)  
+11 + 13 = 24 (left: 24)  
+11 + 13 = 24 (left: 24)  
+
+Task 995: Incorrect - 12 / 4 = 3 (left: 3 4 9)  
+9 - 4 = 5 (left: 3 5)
+5 - 3 = 2 (left: 2)
+14 /  2 = 7 (left: 7 8 8)  
+
+Task 996: Incorrect - 5 - 2 = 3 (left: 3 6 6)  
+6 / 3 = 2 (left: 2 6 6)  
+2 + 6 = 8 (left: 6 8 6)  
+6 + 6 = 12 (left: 6 8 12)  
+
+Task 997: Incorrect - 12 - 9 = 3 (left: 2 4 3)
+4 + 2 = 6 (left: 3 6 4)  
+3 + 6 = 9 (left: 4 9 4)  
+9 - 4 = 5 (left: 4 4 5)  
+
+Task 998: Incorrect - 11 + 4 = 15 (left: 13 15 8)  
+13 - 8 = 5 (left: 15 5)  
+15 - 5 = 10 (left: 10)
+10 / 2 = 5 (left: 5 8)  
+
+Task 999: Incorrect - 4 + 9 = 13 (left: 10 13 13)
+13 - 13 = 0 (left: 0 10 13)
+0 + 10 = 10 (left: 10 13 10)  
+13 - 10 = 3 (left: 3 10 10)  
+
+Task 1000: Incorrect - 12 / 3 = 4 (left: 4 5 3)  
+4 / 2 = 2 (left: 2 5 3)
+5 - 2 = 3 (left: 3 3 3)
+3 * 3 = 9 (left: 3 3 9)  
+
+Correctly solved 0 out of 100 tasks.
+bfs method finished
+Costed {'completion_tokens': 276204, 'prompt_tokens': 2260124, 'cost': 0.336494}
+end time: 2025-05-04 15:00:59

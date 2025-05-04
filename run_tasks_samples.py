@@ -46,7 +46,7 @@ if args.solve_method == 'bfs':
 elif args.solve_method == 'astar':
     solve_func = partial(solve_astar, beam_width=args.n_select_sample)
 elif args.solve_method == 'mcts':
-    solve_func = partial(solve_mcts, n_simulations=20)
+    solve_func = partial(solve_mcts, n_simulations=100)
 
 # ---- thin wrappers --------------------------------------------------------
 def _solve_sync(task_idx: int):
