@@ -7,8 +7,8 @@ args = argparse.Namespace(backend='gpt-4.1-mini', temperature=0.7, task='game24'
 
 task = Game24Task()
 
-idx_min = 901
-idx_max = 1000
+idx_min = 0
+idx_max = 101
 random_task_index = random.randint(idx_min, idx_max)
 print(f"Random Task Index from {idx_min}-{idx_max}: {random_task_index}")
 

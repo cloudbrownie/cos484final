@@ -10,7 +10,9 @@ src/tot/data/24/24.csv
 src/tot/data/crosswords/mini0505.json
 src/tot/data/crosswords/mini0505_0_100_5.json
 src/tot/data/text/data_100_random_text.txt
+src/tot/methods/astar.py
 src/tot/methods/bfs.py
+src/tot/methods/mcts.py
 src/tot/prompts/crosswords.py
 src/tot/prompts/game24.py
 src/tot/prompts/text.py

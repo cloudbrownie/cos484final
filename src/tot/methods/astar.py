@@ -15,6 +15,15 @@ class HeapNode:
 
     def __lt__(self, other):
         return self.f_score < other.f_score
+    
+class AStarNode:
+    def __init__(self, state: str, depth: int, f_score: float):
+        self.state = state
+        self.depth = depth
+        self.f_score = f_score
+        
+    def __lt__(self, other):
+        return self.f_score < other.f_score
 
 def get_value(task, x, y, n_evaluate_sample, cache_value=True):
     value_prompt = task.value_prompt_wrap(x, y)
@@ -81,62 +90,79 @@ def solve_astar(
     We minimize f = g + h.  Lower f ⇒ higher priority.
     """
     # ---- initial state -----------------------------------------------------
-    start_state = task.get_input(task_idx)
-    value = get_value(task, start_state, '', args.n_generate_sample, cache_value=False)
-    frontier: List[Tuple[float, Dict]] = []
-    heappush(frontier, HeapNode(
-            state=start_state,
+    x = task.get_input(task_idx)
+    frontier: List[AStarNode] = []
+    global gpt
+    gpt = partial(gpt, model=args.backend, temperature=args.temperature)
+    print(gpt)
+    heappush(
+        frontier,
+        AStarNode(
+            state='',
             depth=0,
-            thoughts='',
-            f_score=(1 - value)  # f = g + h
+            f_score=0.0
         )
     )
-
+    
     visited = set()
-    best_expr = None
+    best_expr = ''
         
     while frontier:
         node = heappop(frontier)
-        state, depth, thoughts = node.state, node.depth, node.thoughts
-        print(f'current state: {state.strip()} (depth={depth}, f_score={node.f_score})\nthoughts: {thoughts}')
-
-        # Goal check ---------------------------------------------------------
+        state, depth = node.state, node.depth
+        
+        # check for early outs ------------------------------------------------
+        # solution check
         if is_solution(task, task_idx, state):
             best_expr = state
+            #print(f'found solution: {state}')
             break
-
-        # Avoid revisiting the exact same partial prompt
+        
+        # maybe a depth check
+        if depth >= task.steps:
+            continue
+        
+        # check if state has already been visited -----------------------------
         if state in visited:
-            #print(f"Skipping already visited state: {state.strip()} out of {len(visited)} visited states.\nThey are: {list(visited)}")
             continue
         visited.add(state)
-
-        # --------------------------------------------------------------------
-        # 1) GPT‑Generate next‑step thoughts
+        
+        # generate step -------------------------------------------------------
         if args.method_generate == 'sample':
-            candidates = get_samples(task, task.get_input(task_idx), state, n_generate_sample=args.n_generate_sample, prompt_sample=args.prompt_sample, stop=task.stops[depth])
+            candidates = get_samples(task, x, state, n_generate_sample=args.n_generate_sample, prompt_sample=args.prompt_sample, stop=task.stops[depth])
         elif args.method_generate == 'propose':
-            candidates = get_proposals(task, task.get_input(task_idx), state)
-
-        # 2) GPT‑Evaluate (heuristic) each candidate
-        if args.method_evaluate == 'value':
-            values = get_values(task, task.get_input(task_idx), candidates, args.n_evaluate_sample)
-        elif args.method_evaluate == 'vote':
-            values = get_votes(task, task.get_input(task_idx), candidates, args.n_evaluate_sample)
-
-        # 3) Expand
-        for cand_state, v in zip(candidates, values):
-            f_score = (depth + 1) + (1 - v)  # g + h
-            heappush(frontier, HeapNode(
+            candidates = get_proposals(task, x, state)
+        
+        # evaluate step -------------------------------------------------------
+        if args.method_evaluate == 'vote':
+            values = get_votes(task, x, candidates, args.n_evaluate_sample)
+        elif args.method_evaluate == 'value':
+            values = get_values(task, x, candidates, args.n_evaluate_sample)
+        
+        # expand step ---------------------------------------------------------
+        if args.method_select == 'sample':
+            ps = np.array(values) / sum(values)
+            sampled_candidates = np.random.choice(candidates, size=min(len(candidates), args.n_select_sample), replace=False, p=ps)
+        elif args.method_select == 'greedy':
+            sampled_candidates = sorted(zip(candidates, values), key=lambda x: x[1], reverse=True)[:args.n_select_sample]
+            
+        # add candidates to frontier ------------------------------------------
+        for cand_state, v in sampled_candidates:
+            f_score = (depth + 1) + (1 - v)
+            heappush(frontier, AStarNode(
                 state=cand_state,
                 depth=depth + 1,
-                thoughts=thoughts + f'{cand_state}\n',
                 f_score=f_score
             ))
 
-        # Keep frontier small (beam‑style)
+        # keep frontier small (beam-style)
         if len(frontier) > beam_width:
             frontier = sorted(frontier)[:beam_width]
+            
+        # log step ---------------------------------------------------------
+        if to_print:
+            sorted_candidates, sorted_values = zip(*sorted(zip(candidates, values), key=lambda x: x[1], reverse=True))
+            print(f'-- new candidates --: {sorted_candidates}\n-- sol values --: {sorted_values}\n-- choices --: {sampled_candidates}\n')
             
     if to_print and best_expr is not None:
         pretty_print_solution(task_idx, best_expr)
