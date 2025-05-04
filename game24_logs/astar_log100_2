@@ -1,0 +1,133 @@
+Namespace(backend='gpt-4.1-mini', temperature=0.7, task='game24', naive_run=False, prompt_sample=None, method_generate='propose', method_evaluate='value', method_select='greedy', n_generate_sample=1, n_evaluate_sample=3, n_select_sample=5, solve_method='astar')
+running with astar method
+Solving task 901: 1 2 4 7
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Solving task 902: 2 5 8 11
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Solving task 903: 3 4 4 13
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Solving task 904: 6 7 8 9
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Solving task 905: 1 11 11 13
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Solving task 906: 1 8 10 11
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Solving task 907: 2 3 6 9
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Solving task 908: 1 3 5 9
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Solving task 909: 3 3 7 12
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Solving task 910: 4 5 7 9
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 905: Correct - 1 + 11 = 12 (left: 11 12 13)  
+13 - 11 = 2 (left: 12 2)  
+12 * 2 = 24 (left: 24)
+Answer: (1 + 11) * (13 - 11) = 24
+
+Solving task 911: 1 2 8 13
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 901: Correct - 2 - 1 = 1 (left: 1 4 7)  
+7 - 1 = 6 (left: 4 6)  
+4 * 6 = 24 (left: 24)
+Answer: 4 * (7 - (2 - 1)) = 24
+
+Solving task 912: 4 6 6 9
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 909: Correct - 12 + 3 = 15 (left: 3 7 15)  
+15 - 7 = 8 (left: 3 8)
+3 * 8 = 24 (left: 24)
+Answer: 3 * (12 + 3 - 7) = 24
+
+Solving task 913: 1 4 4 8
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 908: Correct - 3 * 5 = 15 (left: 1 15 9)  
+1 * 9 = 9 (left: 15 9)
+15 + 9 = 24 (left: 24)
+Answer: (3 * 5) + (1 * 9) = 24
+
+Solving task 914: 1 5 10 11
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 907: Correct - 2 + 3 = 5 (left: 5 6 9)  
+9 - 5 = 4 (left: 6 4)  
+6 * 4 = 24 (left: 24)
+Answer: 6 * (9 - (2 + 3)) = 24
+
+Solving task 915: 3 4 6 11
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 903: Correct - 3 + 4 = 7 (left: 4 7 13)  
+13 - 7 = 6 (left: 4 6)  
+4 * 6 = 24 (left: 24)  
+Answer: 4 * (13 - (3 + 4)) = 24
+
+Solving task 916: 2 4 8 9
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 902: Correct - 11 - 5 = 6 (left: 2 6 8)  
+8 / 2 = 4 (left: 4 6)
+4 * 6 = 24 (left: 24)
+Answer: (11 - 5) * (8 / 2) = 24
+
+Solving task 917: 1 4 5 13
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 910: Correct - 9 * 4 = 36 (left: 5 7 36)  
+5 + 7 = 12 (left: 12 36)  
+36 - 12 = 24 (left: 24)
+Answer: (9 * 4) - (5 + 7) = 24
+
+Solving task 918: 2 2 7 12
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 906: Correct - 11 + 1 = 12 (left: 8 10 12)  
+10 - 8 = 2 (left: 2 12)
+2 * 12 = 24 (left: 24)
+Answer: (11 + 1) * (10 - 8) = 24
+
+Solving task 919: 3 3 6 7
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 917: Correct - 4 - 1 = 3 (left: 3 5 13)  
+13 - 5 = 8 (left: 3 8)  
+3 * 8 = 24 (left: 24)
+Answer: (4 - 1) * (13 - 5) = 24
+
+Solving task 920: 1 5 9 13
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 911: Correct - 1 + 2 = 3 (left: 3 8 13)  
+3 + 8 = 11 (left: 11 13)  
+11 + 13 = 24 (left: 24)  
+Answer: ((1 + 2) + 8) + 13 = 24
+
+Solving task 921: 5 6 7 13
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 912: Correct - 9 - 4 = 5 (left: 6 6 5)
+6 * 5 = 30 (left: 6 30)  
+30 - 6 = 24 (left: 24)
+Answer: (9 - 4) * 6 - 6 = 24
+
+Solving task 922: 5 5 8 10
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 920: Correct - 1 + 5 = 6 (left: 6 9 13)  
+13 - 9 = 4 (left: 4 6)
+4 * 6 = 24 (left: 24)
+Answer: (1 + 5) * (13 - 9) = 24
+
+Solving task 923: 2 4 6 12
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 915: Correct - 3 + 4 = 7 (left: 6 7 11)  
+6 + 7 = 13 (left: 11 13)  
+11 + 13 = 24 (left: 24)
+Answer: (3 + 4) + (6 + 11) = 24
+
+Solving task 924: 6 7 8 11
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 922: Correct - 10 + 5 = 15 (left: 5 8 15)  
+15 / 5 = 3 (left: 3 8)  
+3 * 8 = 24 (left: 24)
+Answer: (10 + 5) / 5 * 8 = 24
+
+Solving task 925: 7 9 9 13
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
+Task 904: Incorrect - 6 * 7 = 42 (left: 8 9 42)
+42 + 8 = 50 (left: 9 50)  
+9 / 50 = 0 (integer division, left: 0)
+
+Solving task 926: 3 6 9 12
+functools.partial(<function gpt at 0x7fcfa0066680>, model='gpt-4.1-mini', temperature=0.7)
