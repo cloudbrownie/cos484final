@@ -28,18 +28,18 @@ idx_min = 901
 idx_max = 1000
 
 # sample random numbers from range without replacement
-samples = 20
+samples = 50
 tasks = random.sample(range(idx_min, idx_max + 1), samples)
 
 # limit concurrent threads so you stay under OpenAI’s parallel‑request quota
-CONCURRENCY = 5
+CONCURRENCY = 10
 sema = asyncio.Semaphore(CONCURRENCY)
 
 
 if args.solve_method == 'bfs':
     solve_func = solve
 elif args.solve_method == 'astar':
-    solve_func = partial(solve_astar, beam_width=5)
+    solve_func = partial(solve_astar, beam_width=args.n_select_sample)
 elif args.solve_method == 'mcts':
     solve_func = partial(solve_mcts, n_simulations=20)
 
@@ -49,6 +49,10 @@ def _solve_sync(task_idx: int):
     print(f"Solving task {task_idx}: {task.get_input(task_idx)}")
     #ys, _ = solve(args, task, task_idx, to_print=False)
     ys, _ = solve_func(args, task, task_idx, to_print=False)
+    
+    if type(ys) == list:
+        ys = ys[0]
+    
     ok = task.test_output(task_idx, ys)["r"] == 1
     print(f"Task {task_idx}: {'Correct' if ok else 'Incorrect'} - {ys}")
     return task_idx, ok, ys

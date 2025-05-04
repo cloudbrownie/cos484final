@@ -3,7 +3,7 @@ import numpy as np
 from functools import partial
 from tot.models import gpt
 
-from heapq import heappush, heappop
+from heapq import heappush, heappop, nsmallest, heapify
 from typing import List, Tuple, Dict
 
 class HeapNode:
@@ -90,11 +90,12 @@ def solve_astar(
     We minimize f = g + h.  Lower f ⇒ higher priority.
     """
     # ---- initial state -----------------------------------------------------
-    x = task.get_input(task_idx)
-    frontier: List[AStarNode] = []
     global gpt
     gpt = partial(gpt, model=args.backend, temperature=args.temperature)
     print(gpt)
+    
+    x = task.get_input(task_idx)
+    frontier: List[AStarNode] = []
     heappush(
         frontier,
         AStarNode(
@@ -104,8 +105,8 @@ def solve_astar(
         )
     )
     
-    visited = set()
     best_expr = ''
+    best_f = {}
         
     while frontier:
         node = heappop(frontier)
@@ -123,9 +124,9 @@ def solve_astar(
             continue
         
         # check if state has already been visited -----------------------------
-        if state in visited:
+        if state in best_f and node.f_score >= best_f[state]:
             continue
-        visited.add(state)
+        best_f[state] = node.f_score
         
         # generate step -------------------------------------------------------
         if args.method_generate == 'sample':
@@ -141,8 +142,9 @@ def solve_astar(
         
         # expand step ---------------------------------------------------------
         if args.method_select == 'sample':
-            ps = np.array(values) / sum(values)
-            sampled_candidates = np.random.choice(candidates, size=min(len(candidates), args.n_select_sample), replace=False, p=ps)
+            ps = np.array(values) / (sum(values) + 1e-12) # avoid div by zero
+            idx = np.random.choice(len(candidates), size=min(len(candidates), args.n_select_sample), replace=False, p=ps)
+            sampled_candidates = [(candidates[i], values[i]) for i in idx]
         elif args.method_select == 'greedy':
             sampled_candidates = sorted(zip(candidates, values), key=lambda x: x[1], reverse=True)[:args.n_select_sample]
             
@@ -157,7 +159,8 @@ def solve_astar(
 
         # keep frontier small (beam-style)
         if len(frontier) > beam_width:
-            frontier = sorted(frontier)[:beam_width]
+            frontier = list(nsmallest(beam_width, frontier))
+            heapify(frontier)
             
         # log step ---------------------------------------------------------
         if to_print:

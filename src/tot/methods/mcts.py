@@ -73,8 +73,13 @@ def solve_mcts(
       * Expansion uses GPT‑Generate (propose)
       * Rollout / leaf evaluation uses GPT‑Value (value)
     """
-    root_state = task.get_initial_state(task_idx)
-    root = task.hash_state(root_state)
+    
+    global gpt
+    gpt = partial(gpt, model=args.backend, temperature=args.temperature)
+    print(gpt)
+    
+    x = task.get_input(task_idx)
+    root = ''
 
     # tree statistics --------------------------------------------------------
     children = defaultdict(list)    # parent ID -> [child IDs]
@@ -82,15 +87,22 @@ def solve_mcts(
     W = defaultdict(float)          # total value
     P = {}                          # prior (value estimate) for each state
 
-    state_cache = {root: root_state}
+    state_cache = {root: root}
+    best_expr = None
 
     # ------------------------------------------------------------------------
     def policy_and_value(s):
         """Expand: return list[(child_state, prior)] and value for leaf."""
-        samples = get_samples(
-            args, task, task_idx, s, n_generate_sample=args.n_generate_sample
-        )
-        priors = get_value(args, task, task_idx, samples)
+        if args.method_generate == 'sample':
+            samples = get_samples(task, x, s, n_generate_sample=args.n_generate_sample, prompt_sample=args.prompt_sample, stop=task.stops[task.steps])
+        elif args.method_generate == 'propose':
+            samples = get_proposals(task, x, s)        
+        
+        if args.method_evaluate == 'vote':
+            priors = get_votes(task, x, samples, args.n_evaluate_sample)
+        elif args.method_evaluate == 'value':
+            priors = get_values(task, x, samples, args.n_evaluate_sample)
+        
         return samples, priors
 
     # ------------------------------------------------------------------------
@@ -110,12 +122,6 @@ def solve_mcts(
             best_child = max(children[parent], key=ucb)
             path.append(best_child)
             state = state_cache[best_child]
-
-            #ys, infos, finished = finish(args, task, task_idx, state)
-            #if finished:
-            #    # Terminal node reached; back‑prop a perfect value
-            #    leaf_value = 1.0
-            #    break
             
             if is_solution(task, task_idx, state):
                 # Terminal node reached; back‑prop a perfect value
@@ -130,31 +136,25 @@ def solve_mcts(
                 parent = path[-1]
                 child_probs = {}
                 for child_state, p in zip(samples, priors):
-                    cid = task.hash_state(child_state)
-                    if cid not in state_cache:
-                        state_cache[cid] = child_state
-                    children[parent].append(cid)
-                    child_probs[cid] = p
+                    if child_state not in children[parent]:
+                        children[parent].append(child_state)
+                    child_probs[child_state] = p
+                    if child_state not in state_cache:
+                        state_cache[child_state] = child_state
                 P[parent] = child_probs
 
             # ROLLOUT / LEAF EVAL
-            leaf_value = max(priors) if priors else 0.0
+            #leaf_value = max(priors) if priors else 0.0
+            leaf_value = get_value(task, x, state, args.n_evaluate_sample) if samples else 0.0
 
         # BACK‑PROP
         for node in reversed(path):
             N[node] += 1
             W[node] += leaf_value
-
-    # choose best child from root
-    best = max(children[root], key=lambda c: N[c])
-    best_state = state_cache[best]
-    #ys, infos, _ = finish(args, task, task_idx, best_state)
-
-    #if to_print:
-    #    _print_solution(task_idx, ys, infos)
-
-    #return ys, infos
-
-    if to_print:
-        pretty_print_solution(task_idx, best_state)
+        
+    if best_expr is None:
+        # choose best child from root
+        best = max(children[root], key=lambda c: N[c])
+        best_expr = state_cache[best]
+        
     return [best_expr], {}
