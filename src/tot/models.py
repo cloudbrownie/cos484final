@@ -21,6 +21,11 @@ def completions_with_backoff(**kwargs):
 
 def gpt(prompt, model="gpt-4", temperature=0.7, max_tokens=1000, n=1, stop=None) -> list:
     messages = [{"role": "user", "content": prompt}]
+    
+    if model in ['gpt-4o-mini', 'gpt-4.1-mini', 'gpt-4.1-nano']:
+        sys_prompt = 'Follow the instructions carefully and provide a concise answer following the examples if provided.'
+        messages.insert(0, {"role": "system", "content": sys_prompt})
+    
     return chatgpt(messages, model=model, temperature=temperature, max_tokens=max_tokens, n=n, stop=stop)
     
 def chatgpt(messages, model="gpt-4", temperature=0.7, max_tokens=1000, n=1, stop=None) -> list:
