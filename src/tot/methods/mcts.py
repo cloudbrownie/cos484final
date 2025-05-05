@@ -65,7 +65,7 @@ def solve_mcts(
     task_idx: int,
     *,
     to_print: bool = True,
-    n_simulations: int = 100,
+    n_simulations: int = 20,
     c_puct: float = 1.2,
 ):
     """
@@ -89,6 +89,7 @@ def solve_mcts(
 
     state_cache = {root: root}
     best_expr = None
+    infos = []
 
     # ------------------------------------------------------------------------
     def policy_and_value(s):
@@ -127,6 +128,12 @@ def solve_mcts(
                 # Terminal node reached; back‑prop a perfect value
                 leaf_value = 1.0
                 best_expr = state
+                infos.append({
+                    'task_idx': task_idx,
+                    'solution': state,
+                    'leaf_value': leaf_value,
+                    'path_length': len(path),
+                })
                 break
             
         else:

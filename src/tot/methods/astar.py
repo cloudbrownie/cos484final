@@ -6,16 +6,6 @@ from tot.models import gpt
 from heapq import heappush, heappop, nsmallest, heapify
 from typing import List, Tuple, Dict
 
-class HeapNode:
-    def __init__(self, state: str, depth: int, thoughts: List[str], f_score: float):
-        self.state = state
-        self.depth = depth
-        self.thoughts = thoughts
-        self.f_score = f_score
-
-    def __lt__(self, other):
-        return self.f_score < other.f_score
-    
 class AStarNode:
     def __init__(self, state: str, depth: int, f_score: float):
         self.state = state
@@ -109,6 +99,8 @@ def solve_astar(
     best_f_score = float('inf')
     best_f = {}
         
+    infos = []
+        
     while frontier:
         node = heappop(frontier)
         state, depth = node.state, node.depth
@@ -162,6 +154,9 @@ def solve_astar(
                 depth=depth + 1,
                 f_score=f_score
             ))
+            
+        just_candidates, _ = zip(*sampled_candidates) if sampled_candidates else ([], [])
+        infos.append({'depth': depth, 'x': x, 'ys': state, 'new_ys': candidates, 'values': values, 'select_new_ys': just_candidates})
 
         # keep frontier small (beam-style)
         if len(frontier) > beam_width:
@@ -175,6 +170,6 @@ def solve_astar(
             
     if to_print and best_expr is not None:
         pretty_print_solution(task_idx, best_expr)
-    return best_expr, {}
+    return [best_expr], {'steps': infos}
         
 
