@@ -195,18 +195,7 @@ class Game24TaskN(Task):
         n: number of numbers to use in the game
         """
         super().__init__()
-        #self.data = list(pd.read_csv(path)['Puzzles'])
-        
-        # to keep the generated data deterministic, we can set a seed
-        random.seed(42)
-        
-        # generate 1362 random combinations of numbers from 1 to 13
-        numbers = list(range(1, 14))
-        self.data = [' '.join(map(str, random.sample(numbers, n))) for _ in range(1362)]
-        
-        # sort the data based on difficulty
-        self.data = sorted(self.data, key=lambda x: analyse_task(list(map(int, x.split()))))
-        
+        self.data = ...
         self.value_cache = {}
         self.steps = 4
         self.stops = ['\n'] * 4
@@ -268,28 +257,61 @@ class Game24TaskN(Task):
         return value
     
 if __name__ == "__main__":
+    # to keep the generated data deterministic, we can set a seed
+    random.seed(42)
     
-    # Example usage
-    task = Game24TaskN(n=4)
-    idx = 0  # Test the first task
-    input_data = task.get_input(idx)
-    print(f"Input: {input_data}")
+    # print csv header
+    print("rank,task,estimated difficulty")
     
-    # Test the output with a sample expression
-    sample_output = "1 + 2 + 3 * 4 = 24"
-    result = task.test_output(idx, sample_output)
-    print(f"Test Output Result: {result}")
+    # generate 1362 random combinations of numbers from 1 to 13
+    numbers = list(range(1, 14))
+    n = 3
+    valid = 0
+    data_size = 500
+    task_data = []
     
-    # Difficulty analysis
-    nums = list(map(int, input_data.split()))
-    difficulty = analyse_task(nums)
-    print(f"Difficulty: {difficulty}")
+    seen = set()
     
+    num_easy = 0
+    num_med = 0
     
-    # print all tasks in the csv format like: task_idx, input_data, difficulty
-    print("task_idx,input_data,difficulty")
-    for i in range(len(task)):
-        input_data = task.get_input(i)
-        nums = list(map(int, input_data.split()))
+    while valid < data_size:
+        # generate a random combination of n numbers and ensure it can be solved
+        data = ' '.join(map(str, random.sample(numbers, n)))
+        if data in seen:
+            continue
+        seen.add(data)        
+        
+        nums = list(map(int, data.split()))
+        
+        solutions = solve_unique(nums)
+        if len(solutions) == 0:
+            continue
+        
+        # solvable, deterimine difficulty
         difficulty = analyse_task(nums)
-        print(f"{i},{input_data},{difficulty}")
+        
+        if difficulty <= 2 and num_easy >= data_size // 3:
+            continue
+        elif difficulty <= 3 and num_med >= data_size // 3:
+            continue
+        
+        if difficulty <= 2:
+            num_easy += 1
+        elif difficulty <= 3:
+            num_med += 1
+        valid += 1
+        
+        # append to the task data
+        task_data.append((valid, data, difficulty))
+        
+    # sort the task data by difficulty
+    task_data.sort(key=lambda x: x[2])
+    
+    # print the task data
+    for rank, task, difficulty in task_data:
+        print(f"{rank},{task},{difficulty}")
+        
+    # print number of easy and medium tasks generated
+    print(f"Number of easy tasks generated: {num_easy}")
+    print(f"Number of medium tasks generated: {num_med}")
