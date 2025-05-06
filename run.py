@@ -35,11 +35,6 @@ def run(args):
     print(f"Starting tasks from index {args.task_start_index} to {args.task_end_index} at {time.strftime('%Y-%m-%d %H:%M:%S')}")
     
     for i in range(args.task_start_index, args.task_end_index):
-        # solve
-        #if args.naive_run:
-        #    ys, info = naive_solve(args, task, i) 
-        #else:
-        #    ys, info = solve(args, task, i)
         ys, info = solver(args, task, i)
 
         # log

@@ -95,7 +95,8 @@ def solve_astar(
         )
     )
     
-    best_expr = ''
+    #best_expr = ''
+    best_beam_width = []
     best_f_score = float('inf')
     best_f = {}
         
@@ -106,15 +107,12 @@ def solve_astar(
         state, depth = node.state, node.depth
         
         # check for early outs ------------------------------------------------
-        # solution check
-        if is_solution(task, task_idx, state):
-            best_expr = state
-            break
-        
-        # maybe a depth check
+        # if the depth exceeds the task's maximum steps, don't continue the leaf and see if it is a solution
         if depth >= task.steps:
-            continue
-        
+            best_beam_width.append(state)
+            if len(best_beam_width) > beam_width:
+                break
+            
         # check if state has already been visited -----------------------------
         if state in best_f and node.f_score >= best_f[state]:
             continue
@@ -168,8 +166,10 @@ def solve_astar(
             sorted_candidates, sorted_values = zip(*sorted(zip(candidates, values), key=lambda x: x[1], reverse=True))
             print(f'-- new candidates --: {sorted_candidates}\n-- sol values --: {sorted_values}\n-- choices --: {sampled_candidates}\n')
             
-    if to_print and best_expr is not None:
-        pretty_print_solution(task_idx, best_expr)
-    return [best_expr], {'steps': infos}
+    #if to_print and best_expr is not None:
+    #    pretty_print_solution(task_idx, best_expr)
+    #return [best_expr], {'steps': infos}
+
+    return best_beam_width, {'steps': infos}
         
 
