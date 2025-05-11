@@ -65,7 +65,7 @@ def solve_mcts(
     task_idx: int,
     *,
     to_print: bool = True,
-    n_simulations: int = 20,
+    n_simulations: int = 50,
     c_puct: float = 1.2,
 ):
     """

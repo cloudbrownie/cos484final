@@ -19,7 +19,7 @@ async def run_async(args):
         file   = f'./logs/{args.task}/{args.backend}_{args.temperature}_{args.method_generate}{args.n_generate_sample}_{args.method_evaluate}{args.n_evaluate_sample}_{args.method_select}{args.n_select_sample}_start{args.task_start_index}_end{args.task_end_index}.json'
     elif args.search_algo == 'astar':
         solver = solve_astar
-        file   = f'./logs/{args.task}/{args.backend}_{args.temperature}_astar_{args.method_generate}{args.n_generate_sample}_{args.method_evaluate}{args.n_evaluate_sample}_{args.method_select}{args.n_select_sample}_start{args.task_start_index}_end{args.task_end_index}.json'
+        file   = f'./logs/{args.task}/{args.backend}_{args.temperature}_astar_{args.method_generate}{args.n_generate_sample}_{args.method_evaluate}{args.n_evaluate_sample}_{args.method_select}{args.n_select_sample}_start{args.task_start_index}_end{args.task_end_index}_oneshot2.json'
     elif args.search_algo == 'mcts':
         solver = solve_mcts
         file   = f'./logs/{args.task}/{args.backend}_{args.temperature}_mcts_{args.method_generate}{args.n_generate_sample}_{args.method_evaluate}{args.n_evaluate_sample}_{args.method_select}{args.n_select_sample}_start{args.task_start_index}_end{args.task_end_index}.json'
@@ -45,6 +45,16 @@ async def run_async(args):
 
     # -------- launch -------------------------------------------------------
     start, end  = args.task_start_index, args.task_end_index
+    
+    if args.task == 'game24':
+        indices = list(range(start, end))
+    elif args.task == 'text':
+        indices = list(range(start, end))
+    elif args.task == 'crosswords':
+        indices = list(range(start, end))
+    
+    
+    start_time = time.time()
     print(f"⇢  Running indices [{start}, {end}) with up to {args.concurrency} workers "
           f"at {time.strftime('%Y-%m-%d %H:%M:%S')}")
 
@@ -54,7 +64,8 @@ async def run_async(args):
         async with semaphore:
             return await run_one(idx)
 
-    results     = await asyncio.gather(*(bounded(i) for i in range(start, end)))
+    #results     = await asyncio.gather(*(bounded(i) for i in range(start, end)))
+    results     = await asyncio.gather(*(bounded(i) for i in indices))
 
     # -------- bookkeeping --------------------------------------------------
     results.sort(key=lambda r: r["idx"])           # keep log order deterministic
@@ -67,6 +78,7 @@ async def run_async(args):
 
     print(f"✓ finished [{start}, {end})  avg-acc={acc_avg:.3f}  any-acc={acc_any:.3f}")
     print("usage_so_far", gpt_usage(args.backend))
+    print(f'spent {time.time() - start_time:.2f}s')
 # ------------------------------------------------------------------------- #
 
 def parse_args():

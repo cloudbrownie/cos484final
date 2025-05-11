@@ -1,0 +1,1602 @@
+[
+    {
+        "idx": 900,
+        "ys": [
+            "Answer: (10 - 6) * (5 - 4) * 4 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 193,
+            "prompt_tokens": 1990,
+            "cost": 0.0011048
+        }
+    },
+    {
+        "idx": 901,
+        "ys": [
+            "Answer: (7 - 1) * (4 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 153,
+            "prompt_tokens": 1592,
+            "cost": 0.0008816000000000001
+        }
+    },
+    {
+        "idx": 902,
+        "ys": [
+            "Answer: (11 - 8) * (5 - 2) * 2 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 134,
+            "prompt_tokens": 1393,
+            "cost": 0.0007716
+        }
+    },
+    {
+        "idx": 903,
+        "ys": [
+            "Answer: (13 - 4) * (4 - 3) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 294,
+            "prompt_tokens": 2985,
+            "cost": 0.0016644
+        }
+    },
+    {
+        "idx": 904,
+        "ys": [
+            "Answer: (9 - 7) * (8 - 6) * 6 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 275,
+            "prompt_tokens": 2786,
+            "cost": 0.0015544
+        }
+    },
+    {
+        "idx": 905,
+        "ys": [
+            "Answer: (13 + 11) / (11 - 1) = 24 / 10 = 2.4 (not 24)\n\nTry another approach:\n\nAnswer: (11 - 1) * (13 - 11) * 1 = 10 * 2 * 1 = 20 (not 24)\n\nTry another approach:\n\nAnswer: 13 + 11 - 1 - 11 = 12 (not 24)\n\nTry another approach:\n\nAnswer: (11 - 1) * (13 - 11) + 11 = 10 * 2 + 11 = 31 (not 24)\n\nTry another approach:\n\nAnswer: (13 - 11) * (11 + 1) = 2 * 12 = 24\n\nFinal answer: (13 - 11) * (11 + 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1078,
+            "prompt_tokens": 9353,
+            "cost": 0.005466
+        }
+    },
+    {
+        "idx": 906,
+        "ys": [
+            "Answer: (11 - 10) * (8 + 1) * 1 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 253,
+            "prompt_tokens": 2587,
+            "cost": 0.0014396000000000003
+        }
+    },
+    {
+        "idx": 907,
+        "ys": [
+            "Answer: (9 - 3) * (6 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 57,
+            "prompt_tokens": 597,
+            "cost": 0.00033
+        }
+    },
+    {
+        "idx": 908,
+        "ys": [
+            "Answer: (9 - 5) * (3 + 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 19,
+            "prompt_tokens": 199,
+            "cost": 0.00011000000000000002
+        }
+    },
+    {
+        "idx": 909,
+        "ys": [
+            "Answer: (7 - 3) * (12 / 3) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 112,
+            "prompt_tokens": 1194,
+            "cost": 0.0006568
+        }
+    },
+    {
+        "idx": 910,
+        "ys": [
+            "Answer: (9 - 5) * (7 - 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 212,
+            "prompt_tokens": 2189,
+            "cost": 0.0012148
+        }
+    },
+    {
+        "idx": 911,
+        "ys": [
+            "Answer: (13 - 8) * (2 + 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 38,
+            "prompt_tokens": 398,
+            "cost": 0.00022000000000000003
+        }
+    },
+    {
+        "idx": 912,
+        "ys": [
+            "Answer: (6 / 6 + 4) * 9 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 75,
+            "prompt_tokens": 796,
+            "cost": 0.00043840000000000003
+        }
+    },
+    {
+        "idx": 913,
+        "ys": [
+            "Answer: (8 / 4 + 1) * 4 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 171,
+            "prompt_tokens": 1791,
+            "cost": 0.00099
+        }
+    },
+    {
+        "idx": 914,
+        "ys": [
+            "Answer: (11 + 5 + 1) - 10 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 112,
+            "prompt_tokens": 1194,
+            "cost": 0.0006568
+        }
+    },
+    {
+        "idx": 915,
+        "ys": [
+            "Answer: (6 / 3) * (11 - 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 231,
+            "prompt_tokens": 2388,
+            "cost": 0.0013248000000000001
+        }
+    },
+    {
+        "idx": 916,
+        "ys": [
+            "Answer: (9 - 8) * (4 + 2) * 2 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 509,
+            "prompt_tokens": 5174,
+            "cost": 0.0028840000000000003
+        }
+    },
+    {
+        "idx": 917,
+        "ys": [
+            "Answer: (13 - 5) * (4 - 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 313,
+            "prompt_tokens": 3184,
+            "cost": 0.0017744000000000002
+        }
+    },
+    {
+        "idx": 918,
+        "ys": [
+            "Answer: (12 / 2) * (7 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 332,
+            "prompt_tokens": 3383,
+            "cost": 0.0018844
+        }
+    },
+    {
+        "idx": 919,
+        "ys": [
+            "Answer: (7 - 3) * (6 - 3) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 373,
+            "prompt_tokens": 3781,
+            "cost": 0.0021092000000000003
+        }
+    },
+    {
+        "idx": 920,
+        "ys": [
+            "Answer: (13 - 9) * (5 - 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 392,
+            "prompt_tokens": 3980,
+            "cost": 0.0022192
+        }
+    },
+    {
+        "idx": 921,
+        "ys": [
+            "Answer: (13 - 7) * (6 - 5) * 5 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 354,
+            "prompt_tokens": 3582,
+            "cost": 0.0019992
+        }
+    },
+    {
+        "idx": 922,
+        "ys": [
+            "Answer: (10 - 8) * (5 + 5) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 528,
+            "prompt_tokens": 5373,
+            "cost": 0.002994
+        }
+    },
+    {
+        "idx": 923,
+        "ys": [
+            "Answer: (12 / 6) * (4 + 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 547,
+            "prompt_tokens": 5572,
+            "cost": 0.003104
+        }
+    },
+    {
+        "idx": 924,
+        "ys": [
+            "Answer: (11 + 7) - (8 - 6) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 411,
+            "prompt_tokens": 4179,
+            "cost": 0.0023292
+        }
+    },
+    {
+        "idx": 925,
+        "ys": [
+            "Answer: (13 - 9) * (9 - 7) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 430,
+            "prompt_tokens": 4378,
+            "cost": 0.0024392
+        }
+    },
+    {
+        "idx": 926,
+        "ys": [
+            "Answer: (12 / 6) * (9 - 3) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 449,
+            "prompt_tokens": 4577,
+            "cost": 0.0025492
+        }
+    },
+    {
+        "idx": 927,
+        "ys": [
+            "Answer: (13 - 9) * (12 - 6) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 468,
+            "prompt_tokens": 4776,
+            "cost": 0.0026592
+        }
+    },
+    {
+        "idx": 928,
+        "ys": [
+            "Answer: (13 - 9) * (7 - 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 487,
+            "prompt_tokens": 4975,
+            "cost": 0.0027692
+        }
+    },
+    {
+        "idx": 929,
+        "ys": [
+            "Answer: (12 / 6) * (8 - 5) * 5 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 569,
+            "prompt_tokens": 5771,
+            "cost": 0.0032188
+        }
+    },
+    {
+        "idx": 930,
+        "ys": [
+            "Answer: (7 - 4) * (6 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 645,
+            "prompt_tokens": 6567,
+            "cost": 0.0036588000000000002
+        }
+    },
+    {
+        "idx": 931,
+        "ys": [
+            "Answer: (10 + 10 + 2) / 5 = 24 / 5 (not 24, incorrect)\n\nTry another:\n\nAnswer: (10 / 5) * (10 - 2) = 2 * 8 = 16 (not 24, incorrect)\n\nTry:\n\nAnswer: (10 - 5) * (10 - 2) / 5 = 5 * 8 / 5 = 8 (not 24)\n\nTry:\n\nAnswer: 5 * (10 - (10 / 2)) = 5 * (10 - 5) = 5 * 5 = 25 (not 24)\n\nTry:\n\nAnswer: (5 + 5) * (10 - 10 / 2) = 10 * (10 - 5) = 10 * 5 = 50 (no)\n\nTry:\n\nAnswer: 5 * (10 - 5) - 2 = 5 * 5 - 2 = 25 - 2 = 23 (no)\n\nTry:\n\nAnswer: 10 * (5 - 2) - 10 = 10 * 3 - 10 = 30 - 10 = 20 (no)\n\nTry:\n\nAnswer: (10 + 10 + 5) - 2 = 25 - 2 = 23 (no)\n\nTry:\n\nAnswer: 10 * (2 + 5) / 5 = 10 * 7 / 5 = 14 (no)\n\nTry:\n\nAnswer: (10 / 5 + 2) * 5 = (2 + 2) * 5 = 4 * 5 = 20 (no)\n\nTry:\n\nAnswer: (10 + 2) * (5 - 5) = 12 * 0 = 0 (no)\n\nTry:\n\nAnswer: 10 + 10 + 5 - 2 = 23 (no)\n\nTry:\n\nAnswer: (10 * 2) + 10 - 5 = 20 + 10 - 5 = 25 (no)\n\nTry:\n\nAnswer: 10 * (5 - (10 / 5)) = 10 * (5 - 2) = 10 * 3 = 30 (no)\n\nTry:\n\nAnswer: (10 * (5 - 2)) - 10 = (10 * 3) - 10 = 30 - 10 = 20 (no)\n\nTry:\n\nAnswer: (10 - 5) * (10 - 2) = 5 * 8 = 40 (no)\n\nTry:\n\nAnswer: (10 + 10) / (5 / 2) = 20 / 2.5 = 8 (no)\n\nTry:\n\nAnswer: (10 / (5 / 2)) + 10 - 2 = (10 / 2.5) + 10 - 2 = 4 + 8 = 12 (no)\n\nTry:\n\nAnswer: 10 - (5 - (10 / 2)) = 10 - (5 - 5) = 10 - 0 = 10 (no)\n\nTry:\n\nAnswer: (5 + 5 + 10) - 2 = 20 - 2 = 18 (no)\n\nTry:\n\nAnswer: Use division differently.\n\nAnswer: (10 / 2 + 5) * 2 = (5 + 5) * 2 = 10 * 2 = 20 (no)\n\nTry:\n\nAnswer: (10 - 2) * (5 - 3) with 3?\n\nNo 3.\n\nTry:\n\nAnswer: ((10 + 2) * 5) / 2 = (12 * 5) / 2 = 60 / 2 = 30 (no)\n\nTry:\n\nAnswer: (10 * 2) + (5 - 10) = 20 - 5 = 15 (no)\n\nTry:\n\nAnswer: (10 * 2) - (10 / 5) = 20 - 2 = 18 (no)\n\nTry:\n\nAnswer: (10 + 5 + 5) - 2 = 20 - 2 = 18 (no)\n\nTry:\n\nAnswer: (10 + 5) + (10 - 2) = 15 + 8 = 23 (no)\n\nTry:\n\nAnswer: (10 - 5) + (10 + 2) = 5 + 12 = 17 (no)\n\nTry:\n\nAnswer: (10 * 5) / (10 / 2) = 50 / 5 = 10 (no)\n\nTry:\n\nAnswer: (10 + 10) - (5 / 2) = 20 - 2.5 = 17.5 (no)\n\nTry:\n\nAnswer: (10"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 3799,
+            "prompt_tokens": 19502,
+            "cost": 0.013879200000000001
+        }
+    },
+    {
+        "idx": 932,
+        "ys": [
+            "Answer: (12 / 6) * (7 + 6) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 588,
+            "prompt_tokens": 5970,
+            "cost": 0.0033288
+        }
+    },
+    {
+        "idx": 933,
+        "ys": [
+            "Answer: (11 + 9) - (9 / 6) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 626,
+            "prompt_tokens": 6368,
+            "cost": 0.0035488000000000004
+        }
+    },
+    {
+        "idx": 934,
+        "ys": [
+            "Answer: (12 - 8) * (11 - 5) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 607,
+            "prompt_tokens": 6169,
+            "cost": 0.0034387999999999997
+        }
+    },
+    {
+        "idx": 935,
+        "ys": [
+            "Answer: (10 - 8) * (6 + 5) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 664,
+            "prompt_tokens": 6766,
+            "cost": 0.0037688
+        }
+    },
+    {
+        "idx": 936,
+        "ys": [
+            "Answer: (13 - 11) * (12 - 6) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 683,
+            "prompt_tokens": 6965,
+            "cost": 0.0038788000000000004
+        }
+    },
+    {
+        "idx": 937,
+        "ys": [
+            "Answer: (8 / 2) * (8 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 762,
+            "prompt_tokens": 7761,
+            "cost": 0.0043236
+        }
+    },
+    {
+        "idx": 938,
+        "ys": [
+            "Answer: (13 - 12) * (7 + 2) * 2 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 724,
+            "prompt_tokens": 7363,
+            "cost": 0.004103600000000001
+        }
+    },
+    {
+        "idx": 939,
+        "ys": [
+            "Answer: (12 / 6) * (8 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 702,
+            "prompt_tokens": 7164,
+            "cost": 0.0039888
+        }
+    },
+    {
+        "idx": 940,
+        "ys": [
+            "Answer: (13 - 9) * (4 - 3) * 9 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 803,
+            "prompt_tokens": 8159,
+            "cost": 0.004548400000000001
+        }
+    },
+    {
+        "idx": 941,
+        "ys": [
+            "Answer: (10 - 4) * (12 / 5) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 743,
+            "prompt_tokens": 7562,
+            "cost": 0.0042136000000000005
+        }
+    },
+    {
+        "idx": 942,
+        "ys": [
+            "Answer: (11 + 7) / (2 - 1) = 18 (not 24, try another)\n\nAnswer: (7 - 1) * (11 - 2) = 6 * 9 = 54 (not 24)\n\nAnswer: (11 - 7) * (2 + 1) = 4 * 3 = 12 (not 24)\n\nTry another approach:\n\nAnswer: (7 - 1) * 2 + 11 = 6 * 2 + 11 = 12 + 11 = 23 (not 24)\n\nTry:\n\nAnswer: (11 - 7) * (2 + 1) * 1 = 4 * 3 * 1 = 12 (no)\n\nTry:\n\nAnswer: 11 + 7 + 2 + 1 = 21 (no)\n\nTry:\n\nAnswer: (2 * 11) + (7 - 1) = 22 + 6 = 28 (no)\n\nTry:\n\nAnswer: (11 / (7 - 1)) * (2 * 1) = (11 / 6) * 2 = 3.666... (no)\n\nTry:\n\nAnswer: (11 - (7 - 2)) * 1 = (11 - 5) * 1 = 6 (no)\n\nTry:\n\nAnswer: (7 * (2 + 1)) + 11 = 7 * 3 + 11 = 21 + 11 = 32 (no)\n\nTry:\n\nAnswer: (7 + 11) / (2 / 1) = 18 / 2 = 9 (no)\n\nTry:\n\nAnswer: (11 - (7 - (2 * 1))) = 11 - (7 - 2) = 11 - 5 = 6 (no)\n\nTry:\n\nAnswer: (2 + 1 + 7) * 1 = 10 * 1 = 10 (no)\n\nTry:\n\nAnswer: (11 / (7 / (2 + 1))) = 11 / (7 / 3) = 11 / 2.333... = 4.714 (no)\n\nTry:\n\nAnswer: (7 * 2) + (11 - 1) = 14 + 10 = 24\n\nFinal answer: (7 * 2) + (11 - 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 2799,
+            "prompt_tokens": 19303,
+            "cost": 0.012199600000000001
+        }
+    },
+    {
+        "idx": 943,
+        "ys": [
+            "Answer: (6 / (8 / 4)) * 5 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 821,
+            "prompt_tokens": 8358,
+            "cost": 0.0046568
+        }
+    },
+    {
+        "idx": 944,
+        "ys": [
+            "Answer: (13 - 10) * (12 - 6) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 781,
+            "prompt_tokens": 7960,
+            "cost": 0.0044336
+        }
+    },
+    {
+        "idx": 945,
+        "ys": [
+            "Answer: (9 + 9 + 3) - 1 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 858,
+            "prompt_tokens": 8756,
+            "cost": 0.0048752
+        }
+    },
+    {
+        "idx": 946,
+        "ys": [
+            "Answer: (11 - 4) * (4 - 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 840,
+            "prompt_tokens": 8557,
+            "cost": 0.0047668
+        }
+    },
+    {
+        "idx": 947,
+        "ys": [
+            "Answer: (9 - 3) * (10 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 877,
+            "prompt_tokens": 8955,
+            "cost": 0.0049852
+        }
+    },
+    {
+        "idx": 948,
+        "ys": [
+            "Answer: (13 - 1 - 2) * 3 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1097,
+            "prompt_tokens": 9552,
+            "cost": 0.005576
+        }
+    },
+    {
+        "idx": 949,
+        "ys": [
+            "Answer: (6 / (1 - 6/6)) * 6 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1211,
+            "prompt_tokens": 10746,
+            "cost": 0.006236
+        }
+    },
+    {
+        "idx": 950,
+        "ys": [
+            "Answer: (9 - 1) * (2 + 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1116,
+            "prompt_tokens": 9751,
+            "cost": 0.005686
+        }
+    },
+    {
+        "idx": 951,
+        "ys": [
+            "Answer: (11 - 6) * (3 + 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1097,
+            "prompt_tokens": 9552,
+            "cost": 0.005576
+        }
+    },
+    {
+        "idx": 952,
+        "ys": [
+            "Answer: (13 - 10) * (12 - 5) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1135,
+            "prompt_tokens": 9950,
+            "cost": 0.005796
+        }
+    },
+    {
+        "idx": 953,
+        "ys": [
+            "Answer: (6 / 3) * (6 + 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1191,
+            "prompt_tokens": 10547,
+            "cost": 0.006124400000000001
+        }
+    },
+    {
+        "idx": 954,
+        "ys": [
+            "Answer: (12 / 6) * (10 + 7) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1172,
+            "prompt_tokens": 10348,
+            "cost": 0.006014400000000001
+        }
+    },
+    {
+        "idx": 955,
+        "ys": [
+            "Answer: (12 / 8 + 7) * 8 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1153,
+            "prompt_tokens": 10149,
+            "cost": 0.005904400000000001
+        }
+    },
+    {
+        "idx": 956,
+        "ys": [
+            "Answer: (6 / 3) * (8 - 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1290,
+            "prompt_tokens": 11542,
+            "cost": 0.006680800000000001
+        }
+    },
+    {
+        "idx": 957,
+        "ys": [
+            "Answer: (11 + 7 + 1) - 9 = 10 (not 24)\nTry: (11 - 7) * (9 - 1) = 4 * 8 = 32 (not 24)\nTry: (9 - 7) * (11 - 1) = 2 * 10 = 20 (not 24)\nTry: (9 + 7) - (11 - 1) = 16 - 10 = 6 (not 24)\nTry: 7 * (11 - 9) - 1 = 7 * 2 - 1 = 13 (not 24)\nTry: (9 - 1) * (11 - 7) = 8 * 4 = 32 (not 24)\nTry: 11 + 7 + 9 - 1 = 26 (not 24)\nTry: 11 - (9 - (7 - 1)) = 11 - (9 - 6) = 11 - 3 = 8 (not 24)\nTry: (11 - 9) * (7 + 1) = 2 * 8 = 16 (not 24)\nTry: (11 - 7) * (9 - 1) = 4 * 8 = 32 (not 24)\nTry: (9 - 7) * (11 - 1) = 2 * 10 = 20 (not 24)\nTry: 7 + 9 + 11 - 1 = 26 (not 24)\nTry: 9 + 11 + 7 - 1 = 26 (not 24)\n\nTry a fraction: (11 * (9 - 7)) - 1 = 11 * 2 - 1 = 21 (not 24)\nTry: 11 * (7 - (9 - 1)) = 11 * (7 - 8) = 11 * (-1) = -11 (no)\nTry: (11 - (9 - 7)) * 1 = (11 - 2) * 1 = 9 (no)\nTry: (11 - 9) * (7 + 1) = 2 * 8 = 16 (no)\nTry: (11 - 9) * (7 + 1) = 16 (repeat)\nTry: (11 + 9 + 7) / 1 = 27 (no)\nTry: (11 + 9 - 7) * 1 = 13 (no)\n\nTry to use division:\n\nTry: 11 * (9 / (7 + 1)) = 11 * (9 / 8) = 12.375 (no)\nTry: (11 + 7) / (9 / 1) = 18 / 9 = 2 (no)\nTry: (9 + 7) / (11 / 1) = 16 / 11 = 1.4545 (no)\n\nTry: 9 * (11 - (7 + 1)) = 9 * (11 - 8) = 9 * 3 = 27 (no)\n\nTry: (9 - 7) * (11 - 1) = 2 * 10 = 20 (no)\n\nTry: (11 - 1) * (9 - 7) = 10 * 2 = 20 (no)\n\nTry: (7 + 1 + 9) - 11 = 17 - 11 = 6 (no)\n\nTry: (11 + 7 + 1) - 9 = 19 - 9 = 10 (no)\n\nTry: (9 + 1 + 7) - 11 = 17 - 11 = 6 (no)\n\nTry: (11 + 9) - (7 + 1) = 20 - 8 = 12 (no)\n\nTry: (11 - 7) + (9 - 1) = 4 + 8 = 12 (no)\n\nTry: (11 - 7) * (9 - 1) = 4 * 8 = 32 (no)\n\nTry: 11 * (7 - (9 / 1)) = 11 * (7 - 9) = 11 * -2 = -22 (no)\n\nTry: 9 * (11 - 7) - 1 = 9 * 4 - 1 = 36 - 1 = 35 (no)\n\nTry: (11 * 7) / (9 / 1) = 77 / 9 = 8.555 (no)\n\nTry: (11 * 9) / (7 +"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 4799,
+            "prompt_tokens": 19701,
+            "cost": 0.015558800000000001
+        }
+    },
+    {
+        "idx": 958,
+        "ys": [
+            "Answer: (13 - 6) * (3 + 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1404,
+            "prompt_tokens": 12736,
+            "cost": 0.007340800000000001
+        }
+    },
+    {
+        "idx": 959,
+        "ys": [
+            "Answer: (12 / 2) * (5 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1271,
+            "prompt_tokens": 11343,
+            "cost": 0.0065708
+        }
+    },
+    {
+        "idx": 960,
+        "ys": [
+            "Answer: (13 - 8) * (6 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1252,
+            "prompt_tokens": 11144,
+            "cost": 0.0064608
+        }
+    },
+    {
+        "idx": 961,
+        "ys": [
+            "Answer: (12 / 8) * (10 - 8) * 8 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1233,
+            "prompt_tokens": 10945,
+            "cost": 0.0063508
+        }
+    },
+    {
+        "idx": 962,
+        "ys": [
+            "Answer: (13 - 8) * (3 + 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1309,
+            "prompt_tokens": 11741,
+            "cost": 0.0067908
+        }
+    },
+    {
+        "idx": 963,
+        "ys": [
+            "Answer: (10 - 7) * (4 + 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1328,
+            "prompt_tokens": 11940,
+            "cost": 0.0069008
+        }
+    },
+    {
+        "idx": 964,
+        "ys": [
+            "Answer: (13 - 10) * (7 + 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1385,
+            "prompt_tokens": 12537,
+            "cost": 0.007230800000000001
+        }
+    },
+    {
+        "idx": 965,
+        "ys": [
+            "Answer: (13 - 9) * (10 - 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1366,
+            "prompt_tokens": 12338,
+            "cost": 0.0071208
+        }
+    },
+    {
+        "idx": 966,
+        "ys": [
+            "Answer: (3 + 3 + 4) * 2 = 24\n\n(Note: Since 2 is not given, use only the numbers provided.)\n\nRe-evaluate:\n\nAnswer: (11 - 3) * (4 - 3) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1535,
+            "prompt_tokens": 13731,
+            "cost": 0.007948400000000001
+        }
+    },
+    {
+        "idx": 967,
+        "ys": [
+            "Answer: (7 - 5) * (7 + 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1347,
+            "prompt_tokens": 12139,
+            "cost": 0.007010799999999999
+        }
+    },
+    {
+        "idx": 968,
+        "ys": [
+            "Answer: (13 - 9) * (10 - 3) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1461,
+            "prompt_tokens": 13333,
+            "cost": 0.007670800000000001
+        }
+    },
+    {
+        "idx": 969,
+        "ys": [
+            "Answer: (7 - 3) * (4 + 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1442,
+            "prompt_tokens": 13134,
+            "cost": 0.007560800000000001
+        }
+    },
+    {
+        "idx": 970,
+        "ys": [
+            "Answer: (12 / 4) * (8 - 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1423,
+            "prompt_tokens": 12935,
+            "cost": 0.0074508000000000005
+        }
+    },
+    {
+        "idx": 971,
+        "ys": [
+            "Answer: (10 - 6) * (2 + 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1611,
+            "prompt_tokens": 14527,
+            "cost": 0.0083884
+        }
+    },
+    {
+        "idx": 972,
+        "ys": [
+            "Answer: (12 / 12 + 1) * 5 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1479,
+            "prompt_tokens": 13532,
+            "cost": 0.007779200000000001
+        }
+    },
+    {
+        "idx": 973,
+        "ys": [
+            "Answer: (8 - 6) * (6 + 5) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1573,
+            "prompt_tokens": 14129,
+            "cost": 0.0081684
+        }
+    },
+    {
+        "idx": 974,
+        "ys": [
+            "Answer: (11 + 7) - (8 / 7) \u2260 24, try another way.\n\nTry: (7 - (11 - 8)) * 7 = (7 - 3) * 7 = 4 * 7 = 28 \u2260 24.\n\nTry: (8 / (11 - 7)) * (7 + 7) = (8 / 4) * 14 = 2 * 14 = 28 \u2260 24.\n\nTry: (11 - 8) * (7 + 7) / 7 = 3 * 14 / 7 = 3 * 2 = 6 \u2260 24.\n\nTry: (7 + 7 + 8) - 11 = 22 - 11 = 11 \u2260 24.\n\nTry: 7 * (11 - (8 + 7)) = 7 * (11 - 15) = 7 * (-4) = -28 \u2260 24.\n\nTry: (11 - 7) * (8 - 7) * 7 = 4 * 1 * 7 = 28 \u2260 24.\n\nTry: (11 - 7) * 8 - 7 = 4 * 8 - 7 = 32 - 7 = 25 \u2260 24.\n\nTry: 11 + 8 + 7 - 7 = 19 \u2260 24.\n\nTry: 11 + 8 + (7 / 7) = 11 + 8 + 1 = 20 \u2260 24.\n\nTry: (11 - 7) * 7 - 8 = 4 * 7 - 8 = 28 - 8 = 20 \u2260 24.\n\nTry: 11 - (7 + 7 - 8) = 11 - (14 - 8) = 11 - 6 = 5 \u2260 24.\n\nTry: (11 * 7) / (8 / 7) = (77) / (8/7) = 77 * (7/8) = 77 * 0.875 = 67.375 \u2260 24.\n\nTry: (11 + 7 + 7) - 8 = 25 \u2260 24.\n\nTry: (7 * 8) - (11 + 7) = 56 - 18 = 38 \u2260 24.\n\nTry: (8 * 7) - (11 + 7) = 56 - 18 = 38 \u2260 24.\n\nTry: (8 + 7 + 7) - 11 = 22 - 11 = 11 \u2260 24.\n\nTry: (11 + 7) + (8 - 7) = 18 + 1 = 19 \u2260 24.\n\nTry: (11 - 7) * (8 - 7) * 7 = 4 * 1 * 7 = 28 \u2260 24.\n\nTry: (11 - 7) * 8 - 7 = 25 \u2260 24.\n\nTry: (11 * (8 - 7)) + (7 + 7) = 11 * 1 + 14 = 25 \u2260 24.\n\nTry: (11 + 7) + (8 / 7) = 18 + 1.142857 \u2260 24.\n\nTry: (11 - (7 / 7)) * 2 = (11 - 1) * 2 = 10 * 2 = 20 \u2260 24.\n\nTry: (11 - (8 / 7)) * 2 = (11 - 1.142857) * 2 = 9.857143 * 2 = 19.714286 \u2260 24.\n\nTry: (11 - 7) * (8 - (7 / 7)) = 4 * (8 - 1) = 4 * 7 = 28 \u2260 24.\n\nTry: (11 - 7) * (8 - 7) * 7 = 4 * 1 * 7 = 28 \u2260 24.\n\nTry: (11 - 7) * (8 - (7)) = 4 * 1 = 4 \u2260 24.\n\nTry: (7 + 7 + 8) = 22 \u2260 24.\n\nTry: (11 - 7) * 6 = 4 * 6 = 24 but 6 is not given.\n\nTry: 8 * (11 - (7 + 7)) = 8 * (11 - 14) = 8 * (-3) = -24.\n\nTry: (11 - 7"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 5799,
+            "prompt_tokens": 19900,
+            "cost": 0.0172384
+        }
+    },
+    {
+        "idx": 975,
+        "ys": [
+            "Answer: (10 - 7) * (3 + 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1630,
+            "prompt_tokens": 14726,
+            "cost": 0.0084984
+        }
+    },
+    {
+        "idx": 976,
+        "ys": [
+            "Answer: (12 / 3) * (9 - 3) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1554,
+            "prompt_tokens": 13930,
+            "cost": 0.0080584
+        }
+    },
+    {
+        "idx": 977,
+        "ys": [
+            "Answer: (7 - 3) * (10 - 5) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1649,
+            "prompt_tokens": 14925,
+            "cost": 0.0086084
+        }
+    },
+    {
+        "idx": 978,
+        "ys": [
+            "Answer: (13 - 10) * (12 - 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1592,
+            "prompt_tokens": 14328,
+            "cost": 0.0082784
+        }
+    },
+    {
+        "idx": 979,
+        "ys": [
+            "Answer: (12 / 3) * 2 * 3 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1667,
+            "prompt_tokens": 15124,
+            "cost": 0.0087168
+        }
+    },
+    {
+        "idx": 980,
+        "ys": [
+            "Answer: (6 / 3) * (6 + 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1705,
+            "prompt_tokens": 15522,
+            "cost": 0.008936800000000002
+        }
+    },
+    {
+        "idx": 981,
+        "ys": [
+            "Answer: (8 / 8 + 5) * 5 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1760,
+            "prompt_tokens": 16119,
+            "cost": 0.0092636
+        }
+    },
+    {
+        "idx": 982,
+        "ys": [
+            "Answer: (12 / 6) * (8 + 8) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1686,
+            "prompt_tokens": 15323,
+            "cost": 0.008826800000000001
+        }
+    },
+    {
+        "idx": 983,
+        "ys": [
+            "Answer: (9 - 3) * (4 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1724,
+            "prompt_tokens": 15721,
+            "cost": 0.0090468
+        }
+    },
+    {
+        "idx": 984,
+        "ys": [
+            "Answer: (7 - 6) * (11 + 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1858,
+            "prompt_tokens": 17114,
+            "cost": 0.009818400000000001
+        }
+    },
+    {
+        "idx": 985,
+        "ys": [
+            "Answer: (12 / 12 + 5) * 9 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1742,
+            "prompt_tokens": 15920,
+            "cost": 0.0091552
+        }
+    },
+    {
+        "idx": 986,
+        "ys": [
+            "Answer: (12 / (7 - 5)) * 2 * 1 = 24\n\n(Note: Since 7 - 5 is not in the input, let's reconsider with the given numbers.)\n\nRevised Answer: (12 - 8) * (7 - 4) = 24\n\n(But 4 is not in the input.)\n\nUsing only 1, 2, 7, 12:\n\nAnswer: (12 / (7 - 5)) * 2 * 1 is invalid since 5 is not in input.\n\nTry: (7 - 1) * (2 + 1) = 6 * 3 = 18 (No)\n\nTry: 12 * 2 = 24, ignoring other numbers.\n\nBut need to use all numbers? The examples do not specify.\n\nAnswer: 12 * 2 = 24\n\nIf all numbers must be used:\n\n(7 - 1) * (12 / 2) = 6 * 6 = 36 (No)\n\n(7 - 1) * 2 + 12 = 6 * 2 + 12 = 24 (Yes)\n\nSo final answer:\n\nAnswer: (7 - 1) * 2 + 12 = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 2296,
+            "prompt_tokens": 19104,
+            "cost": 0.011315200000000001
+        }
+    },
+    {
+        "idx": 987,
+        "ys": [
+            "Answer: (6 / 2) * (5 - 4) * 4 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1880,
+            "prompt_tokens": 17313,
+            "cost": 0.0099332
+        }
+    },
+    {
+        "idx": 988,
+        "ys": [
+            "Answer: (13 - 8) * (5 - (5 / 5)) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1782,
+            "prompt_tokens": 16318,
+            "cost": 0.009378400000000002
+        }
+    },
+    {
+        "idx": 989,
+        "ys": [
+            "Answer: (10 - 3) * (3 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1801,
+            "prompt_tokens": 16517,
+            "cost": 0.009488400000000001
+        }
+    },
+    {
+        "idx": 990,
+        "ys": [
+            "Answer: (12 / 4) * (8 - 3) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1820,
+            "prompt_tokens": 16716,
+            "cost": 0.0095984
+        }
+    },
+    {
+        "idx": 991,
+        "ys": [
+            "Answer: (6 / 2) * (11 - 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1940,
+            "prompt_tokens": 17910,
+            "cost": 0.010268
+        }
+    },
+    {
+        "idx": 992,
+        "ys": [
+            "Answer: (9 - 8) * (2 + 2) * 2 = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1921,
+            "prompt_tokens": 17711,
+            "cost": 0.010158
+        }
+    },
+    {
+        "idx": 993,
+        "ys": [
+            "Answer: (7 - 5) * (6 + 1) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1839,
+            "prompt_tokens": 16915,
+            "cost": 0.0097084
+        }
+    },
+    {
+        "idx": 994,
+        "ys": [
+            "Answer: (11 + 5) - (10 - 8) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1899,
+            "prompt_tokens": 17512,
+            "cost": 0.0100432
+        }
+    },
+    {
+        "idx": 995,
+        "ys": [
+            "Answer: (12 / 4) * (9 - 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1959,
+            "prompt_tokens": 18109,
+            "cost": 0.010378000000000002
+        }
+    },
+    {
+        "idx": 996,
+        "ys": [
+            "Answer: (6 / 2) * (6 + 5) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1978,
+            "prompt_tokens": 18308,
+            "cost": 0.010488
+        }
+    },
+    {
+        "idx": 997,
+        "ys": [
+            "Answer: (12 / 4) * (9 - 2) = 24"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 2035,
+            "prompt_tokens": 18905,
+            "cost": 0.010818000000000001
+        }
+    },
+    {
+        "idx": 998,
+        "ys": [
+            "Answer: (13 - 11) * (8 + 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 2016,
+            "prompt_tokens": 18706,
+            "cost": 0.010708
+        }
+    },
+    {
+        "idx": 999,
+        "ys": [
+            "Answer: (13 - 9) * (10 - 4) = 24"
+        ],
+        "infos": [
+            {
+                "r": 1
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 1997,
+            "prompt_tokens": 18507,
+            "cost": 0.010598000000000002
+        }
+    }
+]

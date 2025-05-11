@@ -71,7 +71,6 @@ def solve_astar(
     task_idx: int,
     *,
     to_print: bool = True,
-    beam_width: int = 5,
 ):
     """
     A* search over thought sequences.
@@ -84,6 +83,8 @@ def solve_astar(
     gpt = partial(gpt, model=args.backend, temperature=args.temperature)
     print(gpt)
     
+    beam_width = args.n_select_sample
+    
     x = task.get_input(task_idx)
     frontier: List[AStarNode] = []
     heappush(
@@ -95,8 +96,7 @@ def solve_astar(
         )
     )
     
-    #best_expr = ''
-    best_beam_width = []
+    best_solutions = []
     best_f_score = float('inf')
     best_f = {}
         
@@ -107,11 +107,20 @@ def solve_astar(
         state, depth = node.state, node.depth
         
         # check for early outs ------------------------------------------------
+        if depth > task.steps:
+            continue
+       
         # if the depth exceeds the task's maximum steps, don't continue the leaf and see if it is a solution
-        if depth >= task.steps:
-            best_beam_width.append(state)
-            if len(best_beam_width) > beam_width:
+        if is_solution(task, task_idx, state):
+            best_solutions.append(state)
+            break
+            if len(best_solutions) >= beam_width:
                 break
+            
+            continue        
+            
+        if depth == task.steps:
+            continue
             
         # check if state has already been visited -----------------------------
         if state in best_f and node.f_score >= best_f[state]:
@@ -135,7 +144,7 @@ def solve_astar(
             values = get_votes(task, x, candidates, args.n_evaluate_sample)
         elif args.method_evaluate == 'value':
             values = get_values(task, x, candidates, args.n_evaluate_sample)
-        
+            
         # expand step ---------------------------------------------------------
         if args.method_select == 'sample':
             ps = np.array(values) / (sum(values) + 1e-12) # avoid div by zero
@@ -147,6 +156,16 @@ def solve_astar(
         # add candidates to frontier ------------------------------------------
         for cand_state, v in sampled_candidates:
             f_score = (depth + 1) + (1 - v)
+            
+            #f_score = 4 - depth + 20 - v
+            #max_depth = task.steps        # e.g. 4
+            #alpha = 0.4
+
+            #g = (depth + 1) / max_depth   # +1 because you’re computing child depth
+            #h = 1 - (v / 20)
+
+            #f_score = alpha * g + (1 - alpha) * h
+
             heappush(frontier, AStarNode(
                 state=cand_state,
                 depth=depth + 1,
@@ -165,11 +184,10 @@ def solve_astar(
         if to_print:
             sorted_candidates, sorted_values = zip(*sorted(zip(candidates, values), key=lambda x: x[1], reverse=True))
             print(f'-- new candidates --: {sorted_candidates}\n-- sol values --: {sorted_values}\n-- choices --: {sampled_candidates}\n')
-            
-    #if to_print and best_expr is not None:
-    #    pretty_print_solution(task_idx, best_expr)
-    #return [best_expr], {'steps': infos}
 
-    return best_beam_width, {'steps': infos}
+    if len(best_solutions) == 0:
+        best_solutions = ['']
+
+    return best_solutions, {'steps': infos}
         
 

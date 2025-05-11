@@ -260,58 +260,8 @@ if __name__ == "__main__":
     # to keep the generated data deterministic, we can set a seed
     random.seed(42)
     
-    # print csv header
-    print("rank,task,estimated difficulty")
-    
-    # generate 1362 random combinations of numbers from 1 to 13
-    numbers = list(range(1, 14))
+    # generate random combinations of numbers from 1 to 13 of n length
     n = 3
-    valid = 0
-    data_size = 500
-    task_data = []
-    
+    max_num = 13
     seen = set()
-    
-    num_easy = 0
-    num_med = 0
-    
-    while valid < data_size:
-        # generate a random combination of n numbers and ensure it can be solved
-        data = ' '.join(map(str, random.sample(numbers, n)))
-        if data in seen:
-            continue
-        seen.add(data)        
-        
-        nums = list(map(int, data.split()))
-        
-        solutions = solve_unique(nums)
-        if len(solutions) == 0:
-            continue
-        
-        # solvable, deterimine difficulty
-        difficulty = analyse_task(nums)
-        
-        if difficulty <= 2 and num_easy >= data_size // 3:
-            continue
-        elif difficulty <= 3 and num_med >= data_size // 3:
-            continue
-        
-        if difficulty <= 2:
-            num_easy += 1
-        elif difficulty <= 3:
-            num_med += 1
-        valid += 1
-        
-        # append to the task data
-        task_data.append((valid, data, difficulty))
-        
-    # sort the task data by difficulty
-    task_data.sort(key=lambda x: x[2])
-    
-    # print the task data
-    for rank, task, difficulty in task_data:
-        print(f"{rank},{task},{difficulty}")
-        
-    # print number of easy and medium tasks generated
-    print(f"Number of easy tasks generated: {num_easy}")
-    print(f"Number of medium tasks generated: {num_med}")
+    generating = True

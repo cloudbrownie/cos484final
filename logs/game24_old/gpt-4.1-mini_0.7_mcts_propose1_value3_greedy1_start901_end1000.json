@@ -1,0 +1,1586 @@
+[
+    {
+        "idx": 901,
+        "ys": [
+            "1 + 2 = 3 (left: 3 4 7)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 15768,
+            "prompt_tokens": 29125,
+            "cost": 0.0368788
+        }
+    },
+    {
+        "idx": 902,
+        "ys": [
+            "2 + 5 = 7 (left: 7 8 11)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 37312,
+            "prompt_tokens": 75497,
+            "cost": 0.089898
+        }
+    },
+    {
+        "idx": 903,
+        "ys": [
+            "3 + 4 = 7 (left: 4 7 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 15968,
+            "prompt_tokens": 29820,
+            "cost": 0.037476800000000005
+        }
+    },
+    {
+        "idx": 904,
+        "ys": [
+            "6 + 7 = 13 (left: 8 9 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 72117,
+            "prompt_tokens": 146954,
+            "cost": 0.1741688
+        }
+    },
+    {
+        "idx": 905,
+        "ys": [
+            "1 + 11 = 12 (left: 11 12 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 16684,
+            "prompt_tokens": 31673,
+            "cost": 0.039363600000000006
+        }
+    },
+    {
+        "idx": 906,
+        "ys": [
+            "1 + 8 = 9 (left: 9 10 11)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 26061,
+            "prompt_tokens": 50608,
+            "cost": 0.061940800000000004
+        }
+    },
+    {
+        "idx": 907,
+        "ys": [
+            "2 + 3 = 5 (left: 5 6 9)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 27665,
+            "prompt_tokens": 54446,
+            "cost": 0.0660424
+        }
+    },
+    {
+        "idx": 908,
+        "ys": [
+            "1 + 3 = 4 (left: 4 5 9)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 26072,
+            "prompt_tokens": 50917,
+            "cost": 0.062082
+        }
+    },
+    {
+        "idx": 909,
+        "ys": [
+            "3 + 3 = 6 (left: 7 6 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 18358,
+            "prompt_tokens": 35263,
+            "cost": 0.043478
+        }
+    },
+    {
+        "idx": 910,
+        "ys": [
+            "4 + 5 = 9 (left: 7 9 9)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 23642,
+            "prompt_tokens": 45338,
+            "cost": 0.055962399999999995
+        }
+    },
+    {
+        "idx": 911,
+        "ys": [
+            "1 + 2 = 3 (left: 3 8 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 19027,
+            "prompt_tokens": 37116,
+            "cost": 0.045289600000000006
+        }
+    },
+    {
+        "idx": 912,
+        "ys": [
+            "4 + 6 = 10 (left: 6 6 9 10)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 30278,
+            "prompt_tokens": 60084,
+            "cost": 0.0724784
+        }
+    },
+    {
+        "idx": 913,
+        "ys": [
+            "1 + 4 = 5 (left: 4 4 5)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 14373,
+            "prompt_tokens": 25728,
+            "cost": 0.033288
+        }
+    },
+    {
+        "idx": 914,
+        "ys": [
+            "1 + 5 = 6 (left: 6 10 11)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 30269,
+            "prompt_tokens": 59775,
+            "cost": 0.0723404
+        }
+    },
+    {
+        "idx": 915,
+        "ys": [
+            "3 + 4 = 7 (left: 6 7 11)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 46849,
+            "prompt_tokens": 96530,
+            "cost": 0.11357039999999999
+        }
+    },
+    {
+        "idx": 916,
+        "ys": [
+            "2 + 4 = 6 (left: 6 8 9)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 34388,
+            "prompt_tokens": 68439,
+            "cost": 0.08239640000000001
+        }
+    },
+    {
+        "idx": 917,
+        "ys": [
+            "1 + 4 = 5 (left: 5 5 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 34577,
+            "prompt_tokens": 69134,
+            "cost": 0.0829768
+        }
+    },
+    {
+        "idx": 918,
+        "ys": [
+            "2 + 2 = 4 (left: 4 7 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 39161,
+            "prompt_tokens": 78894,
+            "cost": 0.09421520000000001
+        }
+    },
+    {
+        "idx": 919,
+        "ys": [
+            "3 + 3 = 6 (left: 6 6 7)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 40675,
+            "prompt_tokens": 81712,
+            "cost": 0.0977648
+        }
+    },
+    {
+        "idx": 920,
+        "ys": [
+            "1 + 5 = 6 (left: 6 9 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 42017,
+            "prompt_tokens": 85044,
+            "cost": 0.10124480000000002
+        }
+    },
+    {
+        "idx": 921,
+        "ys": [
+            "5 + 6 = 11 (left: 7 11 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 54085,
+            "prompt_tokens": 112535,
+            "cost": 0.13155
+        }
+    },
+    {
+        "idx": 922,
+        "ys": [
+            "5 + 5 = 10 (left: 8 10 10)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 56464,
+            "prompt_tokens": 118097,
+            "cost": 0.13758120000000001
+        }
+    },
+    {
+        "idx": 923,
+        "ys": [
+            "2 + 4 = 6 (left: 6 6 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 43811,
+            "prompt_tokens": 88827,
+            "cost": 0.10562840000000001
+        }
+    },
+    {
+        "idx": 924,
+        "ys": [
+            "6 + 7 = 13 (left: 8 11 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 58403,
+            "prompt_tokens": 122009,
+            "cost": 0.1422484
+        }
+    },
+    {
+        "idx": 925,
+        "ys": [
+            "7 + 9 = 16 (left: 9 9 13  \u2192 after using 7 and 9, left: 9 13 16)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 48138,
+            "prompt_tokens": 99657,
+            "cost": 0.1168836
+        }
+    },
+    {
+        "idx": 926,
+        "ys": [
+            "3 + 6 = 9 (left: 9 9 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 46397,
+            "prompt_tokens": 94797,
+            "cost": 0.112154
+        }
+    },
+    {
+        "idx": 927,
+        "ys": [
+            "6 + 9 = 15 (left: 12 13 15)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 106001,
+            "prompt_tokens": 217514,
+            "cost": 0.25660720000000004
+        }
+    },
+    {
+        "idx": 928,
+        "ys": [
+            "4 + 7 = 11 (left: 9 11 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 47243,
+            "prompt_tokens": 97418,
+            "cost": 0.11455600000000002
+        }
+    },
+    {
+        "idx": 929,
+        "ys": [
+            "5 + 6 = 11 (left: 8 11 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 68233,
+            "prompt_tokens": 140618,
+            "cost": 0.16542
+        }
+    },
+    {
+        "idx": 930,
+        "ys": [
+            "2 + 4 = 6 (left: 6 6 7)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 55827,
+            "prompt_tokens": 116001,
+            "cost": 0.1357236
+        }
+    },
+    {
+        "idx": 931,
+        "ys": [
+            "2 + 5 = 7 (left: 7 10 10)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 60510,
+            "prompt_tokens": 126813,
+            "cost": 0.1475412
+        }
+    },
+    {
+        "idx": 932,
+        "ys": [
+            "6 + 6 = 12 (left: 7 12 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 58924,
+            "prompt_tokens": 123283,
+            "cost": 0.14359159999999999
+        }
+    },
+    {
+        "idx": 933,
+        "ys": [
+            "6 + 9 = 15 (left: 9 9 15)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 68742,
+            "prompt_tokens": 141701,
+            "cost": 0.1666676
+        }
+    },
+    {
+        "idx": 934,
+        "ys": [
+            "5 + 8 = 13 (left: 11 12 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 56007,
+            "prompt_tokens": 116696,
+            "cost": 0.1362896
+        }
+    },
+    {
+        "idx": 935,
+        "ys": [
+            "5 + 6 = 11 (left: 8 10 11)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 66203,
+            "prompt_tokens": 136316,
+            "cost": 0.16045120000000002
+        }
+    },
+    {
+        "idx": 936,
+        "ys": [
+            "6 + 11 = 17 (left: 12 13 17)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 111027,
+            "prompt_tokens": 229332,
+            "cost": 0.269376
+        }
+    },
+    {
+        "idx": 937,
+        "ys": [
+            "2 + 2 = 4 (left: 4 8 8)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 63770,
+            "prompt_tokens": 131952,
+            "cost": 0.15481280000000003
+        }
+    },
+    {
+        "idx": 938,
+        "ys": [
+            "2 + 7 = 9 (left: 9 12 13)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 84969,
+            "prompt_tokens": 175158,
+            "cost": 0.2060136
+        }
+    },
+    {
+        "idx": 939,
+        "ys": [
+            "2 + 6 = 8 (left: 8 8 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 83142,
+            "prompt_tokens": 169421,
+            "cost": 0.20079560000000002
+        }
+    },
+    {
+        "idx": 940,
+        "ys": [
+            "3 + 4 = 7 (left: 7 9 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 71783,
+            "prompt_tokens": 146259,
+            "cost": 0.1733564
+        }
+    },
+    {
+        "idx": 941,
+        "ys": [
+            "4 + 5 = 9 (left: 9 10 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 84385,
+            "prompt_tokens": 174075,
+            "cost": 0.20464600000000002
+        }
+    },
+    {
+        "idx": 942,
+        "ys": [
+            "1 + 2 = 3 (left: 3 7 11)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 83160,
+            "prompt_tokens": 170046,
+            "cost": 0.20107440000000001
+        }
+    },
+    {
+        "idx": 943,
+        "ys": [
+            "4 + 5 = 9 (left: 6 8 9)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 92082,
+            "prompt_tokens": 189104,
+            "cost": 0.2229728
+        }
+    },
+    {
+        "idx": 944,
+        "ys": [
+            "6 + 10 = 16 (left: 12 13 16)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 98988,
+            "prompt_tokens": 203028,
+            "cost": 0.23959200000000003
+        }
+    },
+    {
+        "idx": 945,
+        "ys": [
+            "1 + 3 = 4 (left: 4 9 9)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 75179,
+            "prompt_tokens": 152474,
+            "cost": 0.18127600000000002
+        }
+    },
+    {
+        "idx": 946,
+        "ys": [
+            "1 + 4 = 5 (left: 4 5 11)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 76152,
+            "prompt_tokens": 155754,
+            "cost": 0.1841448
+        }
+    },
+    {
+        "idx": 947,
+        "ys": [
+            "2 + 3 = 5 (left: 5 9 10)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 85662,
+            "prompt_tokens": 176375,
+            "cost": 0.20760920000000002
+        }
+    },
+    {
+        "idx": 948,
+        "ys": [
+            "1 + 2 = 3 (left: 3 3 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 93990,
+            "prompt_tokens": 192889,
+            "cost": 0.2275396
+        }
+    },
+    {
+        "idx": 949,
+        "ys": [
+            "1 + 6 = 7 (left: 6 6 7)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 80693,
+            "prompt_tokens": 164104,
+            "cost": 0.1947504
+        }
+    },
+    {
+        "idx": 950,
+        "ys": [
+            "1 + 2 = 3 (left: 2 2 9  \u2192 3 replaces 1 and 2, so left: 2 9 3)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 88224,
+            "prompt_tokens": 181355,
+            "cost": 0.2137004
+        }
+    },
+    {
+        "idx": 951,
+        "ys": [
+            "1 + 3 = 4 (left: 4 6 11)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 87432,
+            "prompt_tokens": 179888,
+            "cost": 0.21184640000000005
+        }
+    },
+    {
+        "idx": 952,
+        "ys": [
+            "5 + 10 = 15 (left: 12 13 15)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 87025,
+            "prompt_tokens": 178807,
+            "cost": 0.2107628
+        }
+    },
+    {
+        "idx": 953,
+        "ys": [
+            "2 + 3 = 5 (left: 5 6 6)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 89032,
+            "prompt_tokens": 183017,
+            "cost": 0.21565800000000002
+        }
+    },
+    {
+        "idx": 954,
+        "ys": [
+            "6 + 7 = 13 (left: 10 12 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 129056,
+            "prompt_tokens": 263393,
+            "cost": 0.31184680000000004
+        }
+    },
+    {
+        "idx": 955,
+        "ys": [
+            "7 + 8 = 15 (left: 8 8 15)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 100305,
+            "prompt_tokens": 206171,
+            "cost": 0.24295640000000002
+        }
+    },
+    {
+        "idx": 956,
+        "ys": [
+            "3 + 4 = 7 (left: 6 7 8)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 110580,
+            "prompt_tokens": 227622,
+            "cost": 0.2679768
+        }
+    },
+    {
+        "idx": 957,
+        "ys": [
+            "1 + 7 = 8 (left: 8 9 11)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 100836,
+            "prompt_tokens": 207252,
+            "cost": 0.24423840000000002
+        }
+    },
+    {
+        "idx": 958,
+        "ys": [
+            "2 + 3 = 5 (left: 5 6 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 108962,
+            "prompt_tokens": 223993,
+            "cost": 0.2639364
+        }
+    },
+    {
+        "idx": 959,
+        "ys": [
+            "2 + 2 = 4 (left: 4 5 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 105720,
+            "prompt_tokens": 216819,
+            "cost": 0.2558796
+        }
+    },
+    {
+        "idx": 960,
+        "ys": [
+            "2 + 6 = 8 (left: 8 8 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 125890,
+            "prompt_tokens": 256660,
+            "cost": 0.304088
+        }
+    },
+    {
+        "idx": 961,
+        "ys": [
+            "8 + 8 = 16 (left: 10 12 16)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 129942,
+            "prompt_tokens": 265571,
+            "cost": 0.3141356
+        }
+    },
+    {
+        "idx": 962,
+        "ys": [
+            "1 + 3 = 4 (left: 4 8 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 98004,
+            "prompt_tokens": 200656,
+            "cost": 0.23706880000000002
+        }
+    },
+    {
+        "idx": 963,
+        "ys": [
+            "4 + 4 = 8 (left: 7 8 10)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 110783,
+            "prompt_tokens": 228637,
+            "cost": 0.26870760000000005
+        }
+    },
+    {
+        "idx": 964,
+        "ys": [
+            "1 + 7 = 8 (left: 8 10 13)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 104858,
+            "prompt_tokens": 214449,
+            "cost": 0.2535524
+        }
+    },
+    {
+        "idx": 965,
+        "ys": [
+            "1 + 9 = 10 (left: 10 10 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 108981,
+            "prompt_tokens": 224611,
+            "cost": 0.264214
+        }
+    },
+    {
+        "idx": 966,
+        "ys": [
+            "3 + 3 = 6 (left: 4 6 11)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 117391,
+            "prompt_tokens": 241000,
+            "cost": 0.2842256
+        }
+    },
+    {
+        "idx": 967,
+        "ys": [
+            "2 + 5 = 7 (left: 7 7 7)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 115023,
+            "prompt_tokens": 235695,
+            "cost": 0.2783148
+        }
+    },
+    {
+        "idx": 968,
+        "ys": [
+            "3 + 9 = 12 (left: 10 12 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 115826,
+            "prompt_tokens": 237548,
+            "cost": 0.2803408
+        }
+    },
+    {
+        "idx": 969,
+        "ys": [
+            "2 + 3 = 5 (left: 4 5 7)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 116463,
+            "prompt_tokens": 238822,
+            "cost": 0.2818696
+        }
+    },
+    {
+        "idx": 970,
+        "ys": [
+            "4 + 4 = 8 (left: 8 8 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 107427,
+            "prompt_tokens": 221173,
+            "cost": 0.26035240000000004
+        }
+    },
+    {
+        "idx": 971,
+        "ys": [
+            "1 + 2 = 3 (left: 3 6 10)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 108972,
+            "prompt_tokens": 224302,
+            "cost": 0.264076
+        }
+    },
+    {
+        "idx": 972,
+        "ys": [
+            "1 + 5 = 6 (left: 6 12 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 126835,
+            "prompt_tokens": 258899,
+            "cost": 0.3064956
+        }
+    },
+    {
+        "idx": 973,
+        "ys": [
+            "5 + 6 = 11 (left: 6 6 11)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 122768,
+            "prompt_tokens": 250908,
+            "cost": 0.296792
+        }
+    },
+    {
+        "idx": 974,
+        "ys": [
+            "7 + 7 = 14 (left: 8 11 14)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 143920,
+            "prompt_tokens": 300732,
+            "cost": 0.3505648
+        }
+    },
+    {
+        "idx": 975,
+        "ys": [
+            "1 + 3 = 4 (left: 4 7 10)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 123029,
+            "prompt_tokens": 251603,
+            "cost": 0.2974876
+        }
+    },
+    {
+        "idx": 976,
+        "ys": [
+            "3 + 3 = 6 (left: 6 9 12)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 124948,
+            "prompt_tokens": 255000,
+            "cost": 0.3019168
+        }
+    },
+    {
+        "idx": 977,
+        "ys": [
+            "3 + 5 = 8 (left: 7 8 10)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 145424,
+            "prompt_tokens": 306147,
+            "cost": 0.35513720000000004
+        }
+    },
+    {
+        "idx": 978,
+        "ys": [
+            "4 + 10 = 14 (left: 12 13 14)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 144960,
+            "prompt_tokens": 304033,
+            "cost": 0.35354920000000006
+        }
+    },
+    {
+        "idx": 979,
+        "ys": [
+            "2 + 3 = 5 (left: 5 10 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 143137,
+            "prompt_tokens": 295672,
+            "cost": 0.34728800000000004
+        }
+    },
+    {
+        "idx": 980,
+        "ys": [
+            "3 + 4 = 7 (left: 6 6 7)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 134114,
+            "prompt_tokens": 274157,
+            "cost": 0.3242452
+        }
+    },
+    {
+        "idx": 981,
+        "ys": [
+            "5 + 8 = 13 (left: 8 8 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 134286,
+            "prompt_tokens": 275283,
+            "cost": 0.3249708
+        }
+    },
+    {
+        "idx": 982,
+        "ys": [
+            "6 + 8 = 14 (left: 8 8 14)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 139010,
+            "prompt_tokens": 286253,
+            "cost": 0.33691720000000003
+        }
+    },
+    {
+        "idx": 983,
+        "ys": [
+            "2 + 3 = 5 (left: 4 5 9)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 132391,
+            "prompt_tokens": 270953,
+            "cost": 0.3202068
+        }
+    },
+    {
+        "idx": 984,
+        "ys": [
+            "2 + 6 = 8 (left: 7 8 11)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 135010,
+            "prompt_tokens": 276752,
+            "cost": 0.32671680000000003
+        }
+    },
+    {
+        "idx": 985,
+        "ys": [
+            "5 + 9 = 14 (left: 12 12 14)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 132381,
+            "prompt_tokens": 270644,
+            "cost": 0.3200672
+        }
+    },
+    {
+        "idx": 986,
+        "ys": [
+            "1 + 2 = 3 (left: 3 7 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 143128,
+            "prompt_tokens": 295363,
+            "cost": 0.34714999999999996
+        }
+    },
+    {
+        "idx": 987,
+        "ys": [
+            "2 + 4 = 6 (left: 5 6 6)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 134123,
+            "prompt_tokens": 274466,
+            "cost": 0.3243832
+        }
+    },
+    {
+        "idx": 988,
+        "ys": [
+            "5 + 5 = 10 (left: 8 10 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 141733,
+            "prompt_tokens": 292220,
+            "cost": 0.34366080000000004
+        }
+    },
+    {
+        "idx": 989,
+        "ys": [
+            "2 + 3 = 5 (left: 3 5 10)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 136944,
+            "prompt_tokens": 280860,
+            "cost": 0.3314544
+        }
+    },
+    {
+        "idx": 990,
+        "ys": [
+            "3 + 4 = 7 (left: 7 8 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 143174,
+            "prompt_tokens": 296957,
+            "cost": 0.34786120000000004
+        }
+    },
+    {
+        "idx": 991,
+        "ys": [
+            "2 + 4 = 6 (left: 6 6 11)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 138998,
+            "prompt_tokens": 285944,
+            "cost": 0.33677440000000003
+        }
+    },
+    {
+        "idx": 992,
+        "ys": [
+            "2 + 2 = 4 (left: 4 8 9)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 144074,
+            "prompt_tokens": 301234,
+            "cost": 0.35101200000000005
+        }
+    },
+    {
+        "idx": 993,
+        "ys": [
+            "1 + 5 = 6 (left: 6 6 7)\n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 148148,
+            "prompt_tokens": 313689,
+            "cost": 0.3625124
+        }
+    },
+    {
+        "idx": 994,
+        "ys": [
+            "5 + 8 = 13 (left: 10 11 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 146643,
+            "prompt_tokens": 309406,
+            "cost": 0.3583912
+        }
+    },
+    {
+        "idx": 995,
+        "ys": [
+            "4 + 4 = 8 (left: 8 9 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 145433,
+            "prompt_tokens": 306456,
+            "cost": 0.3552752
+        }
+    },
+    {
+        "idx": 996,
+        "ys": [
+            "2 + 5 = 7 (left: 6 6 7)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 147708,
+            "prompt_tokens": 312608,
+            "cost": 0.36137600000000003
+        }
+    },
+    {
+        "idx": 997,
+        "ys": [
+            "2 + 4 = 6 (left: 6 9 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 143483,
+            "prompt_tokens": 298363,
+            "cost": 0.34891800000000006
+        }
+    },
+    {
+        "idx": 998,
+        "ys": [
+            "4 + 8 = 12 (left: 11 13 12)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 147360,
+            "prompt_tokens": 311527,
+            "cost": 0.3603868
+        }
+    },
+    {
+        "idx": 999,
+        "ys": [
+            "4 + 9 = 13 (left: 10 13 13)  \n"
+        ],
+        "infos": [
+            {
+                "r": 0
+            }
+        ],
+        "usage_so_far": {
+            "completion_tokens": 148596,
+            "prompt_tokens": 314770,
+            "cost": 0.36366160000000003
+        }
+    }
+]

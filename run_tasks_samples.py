@@ -3,6 +3,7 @@ from tot.methods.bfs import solve
 from tot.methods.astar import solve_astar
 from tot.methods.mcts import solve_mcts
 from tot.tasks.game24 import Game24Task
+from tot.tasks.crosswords import MiniCrosswordsTask
 from tot.models import gpt_usage
 import random
 import asyncio
@@ -27,6 +28,7 @@ args = args.parse_args()
 print(args)
 
 task = Game24Task()
+#task = MiniCrosswordsTask()
 
 idx_min = 901
 idx_max = 1000
@@ -40,13 +42,12 @@ tasks = list(range(idx_min, idx_max + 1))
 CONCURRENCY = 10
 sema = asyncio.Semaphore(CONCURRENCY)
 
-
 if args.solve_method == 'bfs':
     solve_func = solve
 elif args.solve_method == 'astar':
     solve_func = partial(solve_astar, beam_width=args.n_select_sample)
 elif args.solve_method == 'mcts':
-    solve_func = partial(solve_mcts, n_simulations=100)
+    solve_func = partial(solve_mcts, n_simulations=args.n_select_sample)
 
 # ---- thin wrappers --------------------------------------------------------
 def _solve_sync(task_idx: int):
@@ -79,9 +80,11 @@ async def main():
     print(f"Correctly solved {correct} out of {len(tasks)} tasks.")
 
 print(f'running with {args.solve_method} method')
+start_time = time.time()
 print(f'start time: {time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}')
 
 asyncio.run(main())
 
 print(f'{args.solve_method} method finished\nCosted {gpt_usage(args.backend)}')
 print(f'end time: {time.strftime("%Y-%m-%d %H:%M:%S", time.localtime())}')
+print(f'Total time: {time.time() - start_time:.2f} seconds')
